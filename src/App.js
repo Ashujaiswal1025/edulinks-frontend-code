@@ -9,12 +9,12 @@ import Welcome from './components/Welcome';
 function App() {
   return (
     <Router>
-      <div className="h-full md:h-screen flex flex-col ">
+      <div className="h-screen flex flex-col ">
         {/* Header */}
         <Header />
 
         {/* Main Content */}
-        <div className="flex flex-col justify-center items-center h-[92%] bg-eduTheme px-4">
+        <div className="flex flex-col justify-center items-center h-[92%] bg-eduTheme">
           <Routes>
 
             <Route path="/" element={<Navigate to="/signup" />} />

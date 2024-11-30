@@ -11,7 +11,7 @@ import vector from '../Images/Vector 1.png'
 
 function Welcome() {
   return (
-    <div className='w-full h-full mt-[50px]'>
+    <div className='w-full h-screen mt-[50px] bg-eduTheme'>
       <div className='flex justify-center items-center'>
         <div className='md:w-3/4 md:text-right'>
           <h1 className='text-xl md:text-4xl lg:text-4xl font-adramalech text-center md:text-right font-normal md:mr-24 md:mb-10'>Welcome to Edulinks AI Assistance</h1>

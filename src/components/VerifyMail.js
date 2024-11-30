@@ -71,7 +71,7 @@ function VerifyMail() {
       <h2 className="text-lg md:text-2xl mt-4 md:mb-8 font-bold text-center">
         Verify Your Email
       </h2>
-      <p className="text-sm my-1">Please Enter your 4 digit OTP Sent to your E-mail</p>
+      <p className="text-sm text-center my-1">Please Enter your 4 digit OTP Sent to your E-mail</p>
 
       <div className="flex justify-center gap-2 my-4">
         {otp.map((digit, index) => (

@@ -62,14 +62,14 @@ function SignUp() {
       </h1>
 
       {/* Form Container */}
-      <div className='flex justify-center items-center'>
+      <div className='w-full flex justify-center items-center'>
         <div
           className="rounded-[20px] shadow-md flex flex-col items-center w-full md:w-[676px] md:h-[421px] max-w-[90%] bg-opacity-50 p-6 md:p-8"
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.4)",
           }}
         >
-          <h2 className="text-lg md:text-2xl mt-4 md:mb-8 font-robotoCondensed font-bold text-center">
+          <h2 className="text-lg md:text-2xl mt-4 md:mb-8 mb-4 font-robotoCondensed font-bold text-center">
             Sign Up
           </h2>
 
@@ -109,7 +109,7 @@ function SignUp() {
             <div className="flex justify-start mt-4">
               <button
                 type="submit"
-                className={`bg-eduTheme text-white text-lg md:text-xl font-bold py-1 px-7 rounded-[7px] hover:bg-opacity-90 transition duration-200 flex items-center justify-center ${loading ? 'opacity-50 cursor-not-allowed' : ''
+                className={`bg-eduTheme text-white text-lg md:text-xl font-bold py-1 md:px-7 px-3 rounded-[7px] hover:bg-opacity-90 transition duration-200 flex items-center justify-center ${loading ? 'opacity-50 cursor-not-allowed' : ''
                   }`}
                 disabled={loading}
               >
