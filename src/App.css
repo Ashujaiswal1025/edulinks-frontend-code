@@ -6,3 +6,24 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* Ensure full height is used for the main content area */
+
+
+.main-content {
+  padding-top: 60px; /* Adjust for fixed navbar height */
+}
+
+.chat-container {
+  padding-bottom: 80px; /* Adjust the padding to create space for the navbar */
+}
+
+@media screen and (max-width: 768px) {
+  .med {
+    flex-direction: column;
+  }
+
+  .vect {
+    display: none; /* Hide vector on small screens */
+  }
+}

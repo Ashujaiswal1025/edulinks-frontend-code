@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         eduTheme: 'rgba(55,215,217,1)',
-        eduThemeOP: 'rgba(55,215,217,0.15)'
+        eduThemeOP: 'rgba(55,215,217,0.15)',
+        eduThemeOPL: 'rgba(55,215,217,0.32)'
       },
       fontFamily: {
         robotoCondensed: ['"Roboto Condensed"', 'sans-serif'],
@@ -16,6 +17,14 @@ module.exports = {
       borderWidth: {
         '0.7': '0.7px', // Custom border width
       },
+      screens: {
+        'tablet-range': { min: '580px', max: '1206px' },
+        "smallLap": {min: '1207px' , max: '1355px'},
+        'mlg': { min: '1200px' },
+      },
+      height:{
+        65: '65px',
+      }
     },
   },
   plugins: [],

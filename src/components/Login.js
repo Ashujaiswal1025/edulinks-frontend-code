@@ -45,11 +45,11 @@ function Login() {
     };
 
     return (
-        <div className="w-full h-full mt-20">
-            <h1 className="text-xl md:text-3xl lg:text-4xl font-adramalech font-bold text-white text-center mb-6 md:mb-10">
-                Welcome to Edulinks AI Assistance. To proceed further, login.
+        <div className="w-full flex flex-col justify-center items-center py-32">
+            <h1 className="text-xl lg:text-4xl font-adramalech font-normal text-white text-center my-3 md:mb-10">
+                Welcome to Edulinks AI Assistant to proceed further Login.
             </h1>
-            <div className="flex justify-center items-center mt-16">
+            <div className="flex justify-center items-center mt-6">
                 <div
                     className="rounded-[20px] shadow-md flex flex-col items-center w-full md:w-[676px] md:h-[194px] max-w-[90%] bg-opacity-50 p-6 md:p-8 font-robotoCondensed"
                     style={{
