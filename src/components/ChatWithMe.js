@@ -35,7 +35,7 @@ function ChatWithMe() {
     setInput("");
 
     // Replace with your actual API endpoint
-    try{
+    try {
 
       const response = await fetch('https://edulinkchatbot.io/ask', {
         method: 'POST',
@@ -44,18 +44,18 @@ function ChatWithMe() {
         },
         body: JSON.stringify({ question: input }),
       });
-  
+
       const data = await response.json();
       if (response.ok) {
         const updatedCount = count + 1; // Calculate the next count value
         const htmlContent = marked(data.answer);
-  
+
         // Add the new bot response to the messages
         setMessages((prevMessages) => [
           ...prevMessages,
           { role: "bot", text: htmlContent },
         ]);
-  
+
         if (updatedCount === 5) {
           setMessages((prevMessages) => [
             ...prevMessages,
@@ -65,12 +65,12 @@ function ChatWithMe() {
             },
           ]);
         }
-  
+
         setCount(updatedCount); // Update the count state
       } else {
         console.log('response1234567', response);
       }
-    }catch(err) {
+    } catch (err) {
       console.error('Request failed:', err);
     }
     finally {
@@ -304,7 +304,7 @@ function ChatWithMe() {
           </div>
         </div> */}
 
-        <div className="flex justify-center my-3">
+        {/* <div className="flex justify-center my-3">
           <div className="bg-white px-3 py-2 border-t w-[50%] flex justify-center rounded-full">
             <form onSubmit={handleSend} className=" flex w-full items-center rounded-full space-x-2 ">
               <textarea
@@ -334,7 +334,40 @@ function ChatWithMe() {
               </button>
             </form>
           </div>
+        </div> */}
+        <div className="flex justify-center my-3 px-4 sm:px-0">
+          <div className="bg-white px-3 py-2 border-t w-full sm:w-[80%]  lg:w-[60%] flex justify-center rounded-full shadow-md">
+            <form
+              onSubmit={handleSend}
+              className="flex w-full items-center rounded-full space-x-2 overflow-hidden max-h-[200px]" // Limit the height of the form
+            >
+              <textarea
+                placeholder="Type your message..."
+                ref={textareaRef}
+                value={input}
+                onChange={(e) => {
+                  setInput(e.target.value);
+                  if (textareaRef.current) {
+                    textareaRef.current.style.height = "auto"; // Reset the height
+                    textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`; // Set to scrollHeight
+                  }
+                }}
+                style={{
+                  resize: "none",
+                }}
+                className="flex-grow p-3 outline-none focus:outline-none overflow-y-auto rounded-lg max-h-[150px] text-sm sm:text-base"
+              />
+              <button
+                type="submit"
+                disabled={loading}
+                className="bg-eduTheme text-white px-4 py-2 rounded-lg hover:bg-teal-500 transition-colors duration-300"
+              >
+                {loading ? "Sending..." : "Send"}
+              </button>
+            </form>
+          </div>
         </div>
+
       </div>
     </div>
   );
