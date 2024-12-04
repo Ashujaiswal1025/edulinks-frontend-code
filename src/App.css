@@ -27,3 +27,15 @@
     display: none; /* Hide vector on small screens */
   }
 }
+
+@media (max-width: 640px) {
+  textarea {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
