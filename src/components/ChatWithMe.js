@@ -27,6 +27,14 @@ function ChatWithMe() {
   console.log('messages12', messages);
   const chatEndRef = useRef(null);  // Reference to the chat end
 
+  /*toggle sidebar */
+
+  const [isSidebarVisible, setSidebarVisible] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarVisible(!isSidebarVisible);
+  };
+
   const handleSend = async (e) => {
     e.preventDefault();
     if (input.trim() === "") return;
@@ -91,9 +99,9 @@ function ChatWithMe() {
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
-      <div className="bg-eduTheme w-[448px] flex flex-col font-robotoCondensed pl-[130px] py-[52px]">
+      <div className={`h-full bg-eduTheme  lg:w-[448px] lg:flex lg:relative flex-col font-robotoCondensed lg:pl-[85px] lg:pt-20 pt-28 pb-10 px-5 top-18 left-0 ${isSidebarVisible ? "fixed" : "hidden"}`}>
         <div
-          className="w-[294px] mt-16 mb-8 mr-3 text-xl font-bold px-2 py-[2px]"
+          className="lg:w-[294px] md:mt-16 mt-5 mb-8 mr-3 text-xl font-bold px-2 py-[2px]"
           style={{ background: "rgba(255,255,255,0.53)" }}
         >
           Explore Edulinks AI other features
@@ -130,60 +138,36 @@ function ChatWithMe() {
           </div>
         </div>
         <div className="flex-grow"></div>
-        <button className="w-[261px] h-[34px] bg-white text-xl font-bold text-black rounded-md">
+        <button className="lg:w-[261px] lg:h-[34px] p-1 lg:p-0 bg-white text-xl font-bold text-black rounded-md mt-10 lg:mt-0">
           Book 1:1 Counseling Session
         </button>
       </div>
 
       {/* Chat Window */}
       <div className="flex-grow bg-eduThemeOP flex flex-col pt-20">
+        {/*toggle Sidebar */}
+        <div className="lg:hidden fixed top-24 right-5">
+          <button onClick={toggleSidebar}>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon-lg mx-2 text-token-text-secondary"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M3 8C3 7.44772 3.44772 7 4 7H20C20.5523 7 21 7.44772 21 8C21 8.55228 20.5523 9 20 9H4C3.44772 9 3 8.55228 3 8ZM3 16C3 15.4477 3.44772 15 4 15H14C14.5523 15 15 15.4477 15 16C15 16.5523 14.5523 17 14 17H4C3.44772 17 3 16.5523 3 16Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </button>
+        </div>
         {/* Chat Messages */}
         <div className="flex-grow p-4 overflow-y-auto flex flex-col text-xl font-normal chat-container">
           <div className="space-y-4 mt-auto font-robotoCondensed">
-            {/* {messages.map((message, index) => (
-                            <div
-                                key={index}
-                                className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
-                            >
-                                {message.role === "bot" && (
-                                    <div className="p-2">
-                                        <img src={bot} alt="bot" className="w-[51px] h-[48px]" />
-                                    </div>
-                                )}
-                                <div
-                                    className="max-w-xs p-3 rounded-lg bg-white"
-                                    style={{
-                                        maxWidth: "60%", // Adjusts max width of the bubble
-                                        minWidth: "10%", // Ensures bubble doesn't shrink too small
-                                        wordBreak: "break-word", // Wraps long words properly
-                                        overflowWrap: "break-word", // Ensures text doesn't overflow
-                                        padding: "12px", // Ensure sufficient padding
-                                    }}
-                                >
-                                    {index === messages.findIndex((msg) => msg.role === "user") + 5 ? (
-                                        <>
-                                            {message.text}
-                                            <div>
-                                                <div className="bg-eduThemeOPL my-1 p-2 rounded-md cursor-pointer">
-                                                    Yes, I’d love to connect with experts for personalized guidance{index}{messages.findIndex((msg) => msg.role === "user") + 5}.
-                                                </div>
-                                                <div className="bg-eduThemeOPL mt-1 p-2 rounded-md cursor-pointer">
-                                                    No, I’d prefer continuing to chat with you for now.
-                                                </div>
-                                            </div>
-                                        </>
-                                    ) : (
-                                        message.text
-                                    )}  
-
-                                </div>
-                                {message.role === "user" && (
-                                    <div className="w-[60px] ml-3 h-[60px] rounded-full bg-eduTheme text-white font-black text-2xl flex justify-center items-center">
-                                        {capitalizeFirstName(userData)[0]}
-                                    </div>
-                                )}
-                            </div>
-                        ))} */}
             {messages.map((message, index) => {
               const isSpecialMessage =
                 message.role === "bot" &&
@@ -273,69 +257,7 @@ function ChatWithMe() {
         </div>
 
         {/* Input Field */}
-        {/* <div className="flex justify-center my-5">
-          <div className="bg-white px-3 py-1 border-t w-[50%] flex justify-center rounded-full">
-            <form onSubmit={handleSend} className="flex w-full items-center space-x-2 ">
-              <textarea
-                placeholder="Type your message..."
-                ref={textareaRef}
-                value={input}
-                onChange={(e) => {
-                  setInput(e.target.value);
-                  textareaRef.current.style.height = "auto"; // Reset the height
-                  textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`; // Set to scrollHeight
-                }}
-                style={{
-                  resize: "none",
-                  overflowY: "hidden",
-                  maxHeight: "150px", // Optional: Limit maximum height
-                }}
-                className="flex-grow p-3 outline-none focus:outline-none rounded-lg"
-              />
-
-
-              <button
-                type="submit"
-                className="bg-eduTheme text-white px-4 py-2 rounded-lg hover:bg-teal-500"
-              >
-                Send
-              </button>
-            </form>
-          </div>
-        </div> */}
-
-        {/* <div className="flex justify-center my-3">
-          <div className="bg-white px-3 py-2 border-t w-[50%] flex justify-center rounded-full">
-            <form onSubmit={handleSend} className=" flex w-full items-center rounded-full space-x-2 ">
-              <textarea
-                placeholder="Type your message..."
-                ref={textareaRef}
-                value={input}
-                onChange={(e) => {
-                  setInput(e.target.value);
-                  if (textareaRef.current) {
-                    textareaRef.current.style.height = "auto"; // Reset the height
-                    textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`; // Set to scrollHeight
-                  }
-                }}
-                style={{
-                  resize: "none",
-                  maxHeight: "150px", // Optional: Limit maximum height
-                }}
-                className="flex-grow p-3 outline-none focus:outline-none overflow-y-auto rounded-lg"
-              />
-              <button
-                type="submit"
-                disabled={loading}
-                className="bg-eduTheme text-white px-4 py-2 rounded-lg hover:bg-teal-500"
-              >
-                {loading ? 'Send' : 'Send'}
-
-              </button>
-            </form>
-          </div>
-        </div> */}
-        <div className="flex justify-center my-3 px-4 sm:px-0">
+        <div className="flex justify-center my-3 px-4 sm:px-0 ">
           <div className="bg-white px-3 py-2 border-t w-full sm:w-[80%]  lg:w-[60%] flex justify-center rounded-full shadow-md">
             <form
               onSubmit={handleSend}
@@ -355,7 +277,7 @@ function ChatWithMe() {
                 style={{
                   resize: "none",
                 }}
-                className="flex-grow p-3 outline-none focus:outline-none overflow-y-auto rounded-lg max-h-[150px] text-sm sm:text-base"
+                className="flex-grow bg-transparent placeholder:text-black p-3 outline-none focus:outline-none overflow-y-auto rounded-lg max-h-[150px] text-sm sm:text-base"
               />
               <button
                 type="submit"

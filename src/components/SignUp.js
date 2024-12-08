@@ -56,16 +56,16 @@ function SignUp() {
 
   return (
     <div className='w-full h-full flex flex-col justify-center items-center'>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center pt-28">
         <ToastContainer />
-        <h1 className=" text-xl md:text-3xl lg:text-4xl font-adramalech font-bold text-white text-center my-6 md:mb-10">
+        <h1 className=" text-3xl md:text-4xl font-adramalech font-bold text-white text-center mb-10">
           Welcome to Edulinks AI Assistance to proceed further Sign up.
         </h1>
 
         {/* Form Container */}
         <div className='w-full flex justify-center items-center'>
           <div
-            className="rounded-[20px] shadow-md flex flex-col items-center w-full md:w-[676px] md:h-[421px] max-w-[90%] bg-opacity-50 p-6 md:p-8"
+            className="rounded-[20px] shadow-md flex flex-col items-center md:w-[676px] md:h-[421px] max-w-[90%] bg-opacity-50 p-6 md:p-8"
             style={{
               backgroundColor: "rgba(255, 255, 255, 0.4)",
             }}

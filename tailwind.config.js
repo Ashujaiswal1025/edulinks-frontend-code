@@ -20,7 +20,8 @@ module.exports = {
       screens: {
         'tablet-range': { min: '580px', max: '1206px' },
         "smallLap": {min: '1207px' , max: '1355px'},
-        'mlg': { min: '1200px' },
+        "mlg": { min: '1200px' },
+        'small-laptop': { raw: '(max-width: 1024px) and (max-height: 768px)' }
       },
       height:{
         65: '65px',

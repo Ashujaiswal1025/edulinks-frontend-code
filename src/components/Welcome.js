@@ -12,13 +12,13 @@ import vector from '../Images/Vector 1.png'
 function Welcome() {
   return (
     <div className='h-full flex flex-col justify-center items-center '>
-      <div className='w-full h-full flex flex-col justify-center items-center py-20'>
-        <div className='flex  justify-center gap-24 items-center w-full  md:mt-6 tablet-range:mt-48 tablet-range:mb-4 mb-6'>
-          <div className='tablet-range:text-right ml-64'>
-            <h1 className='text-xl md:text-4xl font-adramalech text-center md:text-right text-wrap font-normal'>Welcome to Edulinks AI Assistance</h1>
+      <div className='w-full h-full flex flex-col justify-center items-center py-24'>
+        <div className='flex  justify-center xl:gap-24 items-center w-full tablet-range:mb-4 mb-6'>
+          <div className='md:ml-64'>
+            <h1 className='text-3xl lg:text-4xl font-adramalech text-center text-wrap font-normal'>Welcome to Edulinks AI Assistance</h1>
           </div>
           <span className=''>
-            <img src={icon} alt="link-logo" className='md:w-[237px] md:h-[108px] w-20 h-10 md:-ml-10 mt-10 py-1' />
+            <img src={icon} alt="link-logo" className='md:w-[237px] md:h-[108px] w-40 h-20 md:-ml-10 mt-10' />
           </span>
         </div>
 
