@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Welcome from './components/Welcome';
 import ChatWithMe from './components/ChatWithMe';
 
+
 const AuthGuard = ({ children }) => {
   console.log('children', children);
   const authToken = localStorage.getItem("authenticatedToken");
