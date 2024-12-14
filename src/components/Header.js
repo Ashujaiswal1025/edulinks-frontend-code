@@ -14,7 +14,7 @@ function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const showLogout = location.pathname === '/edulinks-ai-assistant' || location.pathname === '/edulinks-ai-assistant/chat-with-me';
+    const showLogout = location.pathname === '/signup' || location.pathname === '/signup/verifymail' || location.pathname === '/login' || location.pathname === '/login/verifymail';
 
     function handleLogout() {
         console.log("Hi you are logged out");
@@ -170,7 +170,7 @@ function Header() {
                     </div>)
                 }
                 <div className={`${hideLinks ? 'flex mr-10' : 'hidden'} mlg:flex`}>
-                    {showLogout && (
+                    {!showLogout && (
                         <div
                             className="flex justify-center items-center text-base rounded-md cursor-pointer font-bold font-robotoCondensed"
                             onClick={handleLogout}

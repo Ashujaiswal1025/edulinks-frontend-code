@@ -6,7 +6,7 @@ import VerifyMail from './components/VerifyMail';
 import Login from './components/Login';
 import Welcome from './components/Welcome';
 import ChatWithMe from './components/ChatWithMe';
-
+import CareerPathTest from './components/CareerPathTest';
 
 const AuthGuard = ({ children }) => {
   console.log('children', children);
@@ -37,6 +37,7 @@ function MainContent() {
         <Route path="/login/verifymail" element={<PublicRoute><VerifyMail /></PublicRoute>} />
         <Route path="/edulinks-ai-assistant" element={<AuthGuard><Welcome /></AuthGuard>} />
         <Route path="/edulinks-ai-assistant/chat-with-me" element={<AuthGuard><ChatWithMe /></AuthGuard>} />
+        <Route path="/edulinks-ai-assistant/career-path-test" element={<AuthGuard><CareerPathTest /></AuthGuard>} />
       </Routes>
     </div>
   );  
