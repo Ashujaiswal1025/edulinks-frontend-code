@@ -45,7 +45,7 @@ function ChatWithMe() {
     // Replace with your actual API endpoint
     try {
 
-      const response = await fetch('https://edulinkchatbot.io/ask', {
+      const response = await fetch('https://edulinkchatbot.io/asksite', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
