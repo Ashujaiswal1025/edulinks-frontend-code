@@ -66,7 +66,7 @@ function Header() {
 
     return (
         <header className="py-2 fixed w-full z-50 top-0 bg-white shadow-md flex flex-wrap tablet-range:justify-between items-center">
-            <div className='container mx-auto flex items-center gap-14 justify-between'>
+            <div className='container mx-auto flex items-center gap-7 2xl:gap-10 justify-between'>
                 <Link href='/' className='site_logo'>
                     <img
                         src={EDULINKS}
@@ -78,7 +78,7 @@ function Header() {
                 </Link>
 
                 {!hideLinks &&
-                    (<div className="w-full hidden mlg:flex justify-center font-robotoCondensed md:text-base text-sm">
+                    (<div className="w-full hidden mlg:flex justify-center font-robotoCondensed xl:text-base md:text-sm">
                         <div className='flex justify-center items-center flex-wrap gap-3.5'>
 
                             <div className="text-nowrap font-bold">

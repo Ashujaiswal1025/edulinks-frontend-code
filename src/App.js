@@ -29,7 +29,7 @@ function MainContent() {
   const isChatPage = location.pathname === '/edulinks-ai-assistant/chat-with-me';
 
   return (
-    <div className={`flex-grow ${isChatPage ? '' : 'bg-eduTheme'}`}>
+    <div className={` flex-grow ${isChatPage ? '' : 'bg-eduTheme'}`}>
       <Routes>
         <Route path="/" element={<Navigate to="/signup" />} />
         <Route path="/signup" element={<PublicRoute><SignUp /></PublicRoute>} />
