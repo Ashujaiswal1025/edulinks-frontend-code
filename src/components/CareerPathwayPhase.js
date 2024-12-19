@@ -15,6 +15,8 @@ function CareerPathwayPhase() {
   const [selectedOption, setSelectedOption] = useState(null); // Selected option
   const [scoreData, setScoreData] = useState({}); // Score data
   const [selectedAnswers, setSelectedAnswers] = useState([]); // User's selected answers
+  const [country, setCountryField] = useState('');
+  const [topCarrers, setTopCarrers] = useState([]);
 
   // Function to handle option selection
   const handleOptionClick = (index) => {
@@ -25,9 +27,17 @@ function CareerPathwayPhase() {
       question: currentQuestion.question,
       selectedOption: currentQuestion.options[index],
     };
-
     setSelectedAnswers((prevAnswers) => [...prevAnswers, newAnswer]);
   };
+
+  const showTopCarrer = () => {
+    const sortedEntries = Object.entries(scoreData)
+      .sort(([, valueA], [, valueB]) => valueB - valueA) // Sort by value in descending order
+
+    const topThreeKeys = sortedEntries.slice(0, 3).map(([key]) => key);
+    setTopCarrers(topThreeKeys);
+  };
+  console.log('country12', country);
 
   // Function to handle 'Next' button click
   const handleNext = async () => {
@@ -53,8 +63,13 @@ function CareerPathwayPhase() {
       obj,
       scoreData
     );
+    console.log('newScores12', newScores);
+    selectedAnswers.forEach((item) => {
+      if (item.question === 'In which part of the world would you like to work?') {
+        setCountryField(item.selectedOption);
+      }
+    })
     setScoreData(newScores);
-
     // Update progress for the current phase
     const progressIncrement = 100 / totalQuestionsPerPhase;
     currentProgress[currentPhase] += progressIncrement;
@@ -121,8 +136,10 @@ function CareerPathwayPhase() {
                     <p className="text-lg md:text-xl font-bold">0{index + 1}</p>
                   </div>
                 </div>
-                {/* Conditionally Render a Line Between Phases */}
-                <div className={`h-1 md:h-6 w-8 md:w-1 bg-eduThemeCircle -ml-4 md:ml-0 transform translate-x-1/2 ${index < progress.length - 1 && isCompleted ? "block" : "hidden"}`} />
+                  {/* Conditionally Render a Line Between Phases */}
+                  {index < progress.length - 1 && isCompleted && (
+                    <div className="h-6 w-1 bg-eduThemeCircle transform translate-x-1/2" />
+                  )}
               </div>
             );
           })}
@@ -166,8 +183,8 @@ function CareerPathwayPhase() {
           ) : (
             <div className="w-full md:w-3/4 flex justify-end">
               <button
-
-                className="md:px-5 px-2 bg-eduTheme text-base font-medium text-white rounded mt-6"
+                onClick={showTopCarrer}
+                className="px-5 bg-eduTheme text-base font-medium text-white rounded mt-6"
               >
                 Submit
               </button>
