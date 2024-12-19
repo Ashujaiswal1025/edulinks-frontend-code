@@ -746,7 +746,7 @@ export const obj = [
         }
       },
       {
-        "text": "Traveling to new places frequently",
+        "text": "Travelling to new places frequently",
         "scores": {
           "Marketing": 3,
           "Environmental Science": 2,
@@ -860,6 +860,7 @@ export async function matchScore(question, answer, obj, scoreData) {
   for (let items of obj) {
     if (items.text === question) {
       const selectedOption = items.options.find(item => item.text === answer);
+      console.log('selectedOption12', selectedOption);
       for (let [key, value] of Object.entries(selectedOption.scores)) {
         scoreData[key] = (scoreData[key] || 0) + value
       }
