@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Career from '../Images/Career Pathway Test 1.png';
 import { quizData } from '../quizData/quiz.data';
 import { matchScore, obj } from '../quizData/fetchScore.data';
@@ -6,6 +7,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function CareerPathwayPhase() {
+  const navigate = useNavigate();
   const totalPhases = 5; // Total number of phases
   const totalQuestionsPerPhase = 4; // Total questions in each phase
   const totalQuestions = totalPhases * totalQuestionsPerPhase; // Total number of questions
@@ -166,8 +168,8 @@ function CareerPathwayPhase() {
           ) : (
             <div className="w-full md:w-3/4 flex justify-end">
               <button
-
-                className="md:px-5 px-2 bg-eduTheme text-base font-medium text-white rounded mt-6"
+                onClick={()=>navigate('/edulinks-ai-assistant/career-path-test/phase/top-courses')}
+                className="md:px-5 py-1 px-2 bg-eduTheme text-base font-medium text-white rounded mt-6"
               >
                 Submit
               </button>
