@@ -160,7 +160,7 @@ function CareerPathwayPhase() {
             <div className="w-full md:w-3/4 flex justify-end">
               <button
                 onClick={handleNext}
-                className="md:px-5 px-2 bg-eduTheme text-base font-medium text-white rounded mt-6"
+                className="md:px-5 py-1 px-2 bg-eduTheme text-base font-medium text-white rounded mt-6"
               >
                 Next
               </button>
