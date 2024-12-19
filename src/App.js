@@ -8,6 +8,7 @@ import Welcome from './components/Welcome';
 import ChatWithMe from './components/ChatWithMe';
 import CareerPathTest from './components/CareerPathTest';
 import CareerPathwayPhase from './components/CareerPathwayPhase';
+import TopCourses from './components/TopCourses';
 
 const AuthGuard = ({ children }) => {
   console.log('children', children);
@@ -40,6 +41,7 @@ function MainContent() {
         <Route path="/edulinks-ai-assistant/chat-with-me" element={<AuthGuard><ChatWithMe /></AuthGuard>} />
         <Route path="/edulinks-ai-assistant/career-path-test" element={<AuthGuard><CareerPathTest /></AuthGuard>} />
         <Route path="/edulinks-ai-assistant/career-path-test/phase" element={<AuthGuard><CareerPathwayPhase /></AuthGuard>} />
+        <Route path="/edulinks-ai-assistant/career-path-test/phase/top-courses" element={<AuthGuard><TopCourses /></AuthGuard>} />
       </Routes>
     </div>
   );  

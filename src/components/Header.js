@@ -65,14 +65,13 @@ function Header() {
     ]
 
     return (
-        <header className="py-2 fixed w-full z-50 top-0 bg-white shadow-md flex flex-wrap tablet-range:justify-between items-center">
+        <header className="py-3 md:py-2 fixed w-full z-50 top-0 bg-white shadow-md flex flex-wrap tablet-range:justify-between items-center">
             <div className='container mx-auto flex items-center gap-7 2xl:gap-10 justify-between'>
                 <Link href='/' className='site_logo'>
                     <img
                         src={EDULINKS}
                         alt="EDULINK-logo"
-                        className=""
-                        width={'100%'}
+                        className="w-28 h-10 md:w-full md:h-full"
 
                     />
                 </Link>
@@ -156,7 +155,7 @@ function Header() {
                             </div>
                             {/* Edulink AI Assistance */}
                             <div className="bot_btn">
-                                <button className="py-1 px-3.5 rounded-lg text-base border-0.7 border-black  text-black font-normal hover:bg-eduTheme flex items-center justify-center">
+                                <button  onClick={() => navigate('/edulinks-ai-assistant')} className="py-1 px-3.5 rounded-lg text-base border-0.7 border-black  text-black font-normal hover:bg-eduTheme flex items-center justify-center">
                                     Edulinks AI Assistance
                                 </button>
                             </div>
@@ -319,7 +318,7 @@ function Header() {
                                         </div>
                                     )}
                                 </div>
-                                <Link to="/" className="block px-4 py-2 hover:text-green-500">Edulinks AI Assistant</Link>
+                                <Link to="/edulinks-ai-assistant" className="block px-4 py-2 hover:text-green-500">Edulinks AI Assistant</Link>
                                 <div className="flex-grow"></div>
                                 <div className="book_btn">
                                     <button className="py-1.6 px-2 rounded-lg border-0.7 border-black  text-black text-sm font-bold hover:bg-eduTheme flex flex-wrap items-center justify-between">

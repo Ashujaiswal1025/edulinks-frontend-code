@@ -58,7 +58,7 @@ function SignUp() {
     <div className='w-full h-full flex flex-col justify-center items-center'>
       <div className="flex flex-col items-center justify-center pt-28">
         <ToastContainer />
-        <h1 className=" text-3xl md:text-4xl font-adramalech font-bold text-white text-center mb-10">
+        <h1 className=" text-xl md:text-4xl font-adramalech font-bold text-white text-center mb-10">
           Welcome to Edulinks AI Assistance to proceed further Sign up.
         </h1>
 
