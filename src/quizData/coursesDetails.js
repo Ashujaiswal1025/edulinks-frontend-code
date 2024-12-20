@@ -20,7 +20,7 @@ export const dataImage = [{
    course: "Education",
    imgPath: "Rectangle-580-2.png"
 },{
-   course: "Natural Science",
+   course: "Natural Sciences",
    imgPath: "Rectangle-580.png"
 },{
    course: "Environmental Science",
