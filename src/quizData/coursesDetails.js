@@ -47,6 +47,10 @@ export const dataImage = [{
 {
    course: "Mathematics and Statistics",
    imgPath: "Rectangle-496-2.png"
+},
+{
+   course: "Arts ",
+   imgPath: "Rectangle-496-2.png"
 }
 
 ]

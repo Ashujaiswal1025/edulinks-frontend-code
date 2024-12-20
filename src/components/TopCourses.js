@@ -62,13 +62,13 @@ function TopCourses() {
             {/* Slider Buttons for Mobile View */}
             <button
                 onClick={handlePrevSlide}
-                className="absolute sm:hidden left-4 text-2xl top-1/2 border-2 border-eduTheme transform -translate-y-1/2 text-eduTheme bg-white rounded-full shadow-lg"
+                className="w-10 h-10 absolute sm:hidden left-4 text-2xl top-1/2 border-2 border-eduTheme transform -translate-y-1/2 text-eduTheme bg-white rounded-full shadow-lg flex justify-center items-center"
             >
                 &lt;
             </button>
             <button
                 onClick={handleNextSlide}
-                className="absolute sm:hidden right-4 text-2xl top-1/2 border-2 border-eduTheme transform -translate-y-1/2 text-eduTheme bg-white rounded-full shadow-lg"
+                className="w-10 h-10 absolute sm:hidden right-4 text-2xl top-1/2 border-2 border-eduTheme transform -translate-y-1/2 text-eduTheme bg-white rounded-full shadow-lg flex justify-center items-center"
             >
                 &gt;
             </button>
