@@ -13,7 +13,7 @@ export const obj = [
       "text": "Helping people overcome challenges and improve their health",
       "scores": {
         "Health Sciences": 3,
-        "Psychology and Neuroscienc": 2,
+        "Psychology and Neuroscience": 2,
         "Education": 1
       }
     },

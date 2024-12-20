@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(92.94deg, #087172 0%, #37D7D9 100%)'
+        'custom-gradient': 'linear-gradient(92.94deg, #087172 0%, #37D7D9 100%)',
       },
       colors: {
         eduTheme: 'rgba(55,215,217,1)',
