@@ -20,7 +20,7 @@ export const obj = [
     {
       "text": "Exploring and understanding natural phenomena",
       "scores": {
-        "Natural Science": 3,
+        "Natural Sciences": 3,
         "Environmental Science": 2,
         "Biotechnology": 1
       }
@@ -65,7 +65,7 @@ export const obj = [
       "text": "Gardening, hiking, or engaging in nature photography",
       "scores": {
         "Environmental Science": 3,
-        "Natural Science": 2,
+        "Natural Sciences": 2,
         "Biotechnology": 1
       }
     },
