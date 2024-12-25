@@ -34,11 +34,14 @@ function CareerPathwayPhase() {
     setSelectedAnswers((prevAnswers) => [...prevAnswers, newAnswer]);
   };
 
-  const showTopCarrer = () => {
+  const showTopCarrer = async() => {
+    console.log('scoreData12', scoreData);
+    await handleNext()
     const sortedEntries = Object.entries(scoreData)
       .sort(([, valueA], [, valueB]) => valueB - valueA) // Sort by value in descending order
 
     const topThreeKeys = sortedEntries.slice(0, 3).map(([key]) => key);
+    console.log('topThreeKeys12', topThreeKeys);
     setTopCarrers(topThreeKeys);
 
     const filteredImages = dataImage.filter((item) => topThreeKeys.includes(item.course));
@@ -52,7 +55,6 @@ function CareerPathwayPhase() {
       }
     });
   };
-  console.log('country12', country);
 
   // Function to handle 'Next' button click
   const handleNext = async () => {
@@ -78,7 +80,6 @@ function CareerPathwayPhase() {
       obj,
       scoreData
     );
-    console.log('newScores12', newScores);
     selectedAnswers.forEach((item) => {
       if (item.question === 'In which part of the world would you like to work?') {
         setCountryField(item.selectedOption);

@@ -50,7 +50,7 @@ export const dataImage = [{
 },
 {
    course: "Arts ",
-   imgPath: "Rectangle-496-2.png"
+   imgPath: "image-5-1.png"
 }
 
 ]
