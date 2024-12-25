@@ -6,35 +6,22 @@ import { germanyQuizData, canadaQuizData, newZealandQuizData, australiaQuizData,
 
 
 function VisaQueryCountry() {
-
   const country = ['Germany', 'Canada', 'UK', 'USA', 'New Zealand', 'Australia'];
   const [selectedOption, setSelectedOption] = useState(null); // Selected option
   const navigate = useNavigate();
 
   const handleCountryQueryData = () => {
     console.log('country[selectedOption]12', country[selectedOption]);
-    let quizData;
-    switch (country[selectedOption]) {
-      case 'Germany':
-        quizData = germanyQuizData;
-        break;
-      case 'Canada':
-        quizData = canadaQuizData;
-        break;
-      case 'UK':
-        quizData = ukQuizData;
-        break;
-      case 'USA':
-        quizData = usaQuizData;
-        break;
-      case 'New Zealand':
-        quizData = newZealandQuizData;
-        break;
-      case 'Australia':
-        quizData = australiaQuizData;
-        break;
-
-    }
+    const quizDataMap = {
+      Germany: germanyQuizData,
+      Canada: canadaQuizData,
+      UK: ukQuizData,
+      USA: usaQuizData,
+      'New Zealand': newZealandQuizData,
+      Australia: australiaQuizData,
+    };
+    const quizData = quizDataMap[country[selectedOption]];
+    
     console.log('quizData12', quizData);
     navigate('/edulinks-ai-assistant/visa-query-solver/visa-query-assessment', { state: { selectedCountry: country[selectedOption], quizData } })
   }
