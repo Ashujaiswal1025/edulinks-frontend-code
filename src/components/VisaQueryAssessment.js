@@ -77,11 +77,14 @@ function VisaQueryAssessment() {
   };
 
   const showCalculatedAnswer = async () => {
+    const updatedScore = score + (selectedAnswers[currentQuestionIndex]?.points || 0);
+    const updatedPercentage = (updatedScore / 100) * 100;
+
     await handleNext();
     navigate('/edulinks-ai-assistant/visa-query-solver/visa-query-result',{
       state:{
         selectedCountry,
-        percentageChance
+        percentageChance: Math.floor(updatedPercentage)
       }
     })
   };
