@@ -78,6 +78,12 @@ function VisaQueryAssessment() {
 
   const showCalculatedAnswer = async () => {
     await handleNext();
+    navigate('/edulinks-ai-assistant/visa-query-solver/visa-query-result',{
+      state:{
+        selectedCountry,
+        percentageChance
+      }
+    })
   };
 console.log('percentageChance12', percentageChance);
   return (
@@ -89,6 +95,12 @@ console.log('percentageChance12', percentageChance);
             <h1 className="text-2xl md:text-3xl 2xl:text-4xl font-bold ml-2 md:ml-0 my-2">{selectedCountry} Study Visa</h1>
             <p className='text-2xl font-bold'>#FACT {count} </p>
           </div>
+          <p
+            className="text-white text-lg md:text-xl font-medium text-justify"
+            style={{ lineHeight: '32px' }}
+          >
+            {quizData[currentQuestionIndex]?.heading || `This final phase delves into specific professional inclinations, ideal mentors, and geographic preferences, providing insight into career paths that best align with the student's unique profile`}
+          </p>
           <p
             className="text-white text-lg md:text-xl font-medium text-justify"
             style={{ lineHeight: '32px' }}
