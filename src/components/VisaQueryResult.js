@@ -1,11 +1,22 @@
 import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import * as echarts from 'echarts';
+import { visaQueryResults } from '../quizData/visaQuery.result';
 
 function VisaQueryResult() {
     const chartRef = useRef(null);
     const location = useLocation();
     const { selectedCountry, percentageChance } = location.state || {};
+
+    let subjectTag;
+    let resultContent;
+
+    visaQueryResults[selectedCountry].forEach(element => {
+        if (percentageChance >= element.lowestPercentage && percentageChance <= element.highestPercentage) {
+            subjectTag = element.subject;
+            resultContent = element.content;
+        }
+    });
 
     useEffect(() => {
         // Initialize the chart
@@ -109,9 +120,9 @@ function VisaQueryResult() {
                 // style={{ width: '80%', height: '300px' }}
                 ></div>
                 <div className='md:w-4/5 text-center gap-2'>
-                    <h2 className='text-2xl text-center font-adramalech md:-mt-10 mb-2'>Promising, Let’s Work on It!</h2>
+                    <h2 className='text-2xl text-center font-adramalech md:-mt-10 mb-2'>{subjectTag}</h2>
                     <div className='w-full  flex justify-center'>
-                        <p className='w-5/6 font-robotoCondensed text-lg text-center font-medium space-x-0 px-5'>You have good potential, but some areas need improvement. We can guide you to strengthen your profile and boost your chances. If not Germany, our study visa experts can help explore other countries too.</p>
+                        <p className='w-5/6 font-robotoCondensed text-lg text-center font-medium space-x-0 px-5'>{resultContent}</p>
                     </div>
                     <p className='font-robotoCondensed text-lg text-center font-medium space-x-0 px-5'> Let’s take the next step together!</p>
                     <button className='bg-eduTheme px-6 py-2 text-xl rounded-[22.5px] mt-3'>Book 1:1 Counselling</button>
