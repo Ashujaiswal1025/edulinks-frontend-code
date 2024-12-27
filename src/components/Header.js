@@ -90,7 +90,7 @@ function Header() {
                                 <span className="cursor-pointer font-bold flex items-center">
                                     Study Destination <img src={drop} alt="drop" className="ml-1" />
                                 </span>
-                                <div className="w-64 absolute hidden group-hover:block bg-white rounded-md shadow-md mt-1">
+                                <div className="w-64 absolute hidden group-hover:block bg-white rounded-md shadow-md mt-1 top-4 pt-5 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                     {study.map((item, index) => (
                                         <Link
                                             key={index}
@@ -107,7 +107,7 @@ function Header() {
                                 <span className="cursor-pointer font-bold flex items-center">
                                     Services <img src={drop} alt="drop" className="ml-1" />
                                 </span>
-                                <div className="w-64 absolute hidden group-hover:block bg-white rounded-md shadow-md mt-1">
+                                <div className="w-64 absolute hidden group-hover:block bg-white rounded-md shadow-md mt-1 top-4 pt-5 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                     {career.map((item, index) => (
                                         <Link
                                             key={index}
@@ -124,7 +124,7 @@ function Header() {
                                 <span className="cursor-pointer font-bold flex items-center">
                                     Top Universities <img src={drop} alt="drop" className="ml-1" />
                                 </span>
-                                <div className="w-64 absolute hidden group-hover:block bg-white rounded-md shadow-md mt-1">
+                                <div className="w-64 absolute hidden group-hover:block bg-white rounded-md shadow-md mt-1 top-4 pt-5 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                     {University.map((item, index) => (
                                         <Link
                                             key={index}
@@ -141,7 +141,7 @@ function Header() {
                                 <span className="cursor-pointer font-bold flex items-center">
                                     Top Careers <img src={drop} alt="drop" className="ml-1" />
                                 </span>
-                                <div className="w-64 absolute hidden group-hover:block text-base bg-white font-normal rounded-md shadow-md mt-1">
+                                <div className="w-64 absolute hidden group-hover:block bg-white rounded-md shadow-md mt-1 top-4 pt-5 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                                     {study.map((item, index) => (
                                         <Link
                                             key={index}

@@ -91,11 +91,11 @@ function VisaQueryAssessment() {
 console.log('percentageChance12', percentageChance);
   return (
     <div className="bg-white flex flex-col md:flex-row w-full h-full font-robotoCondensed">
-      <div className="flex flex-wrap w-full h-3/5 md:w-3/5 md:h-full bg-eduTheme pt-20 md:flex-col md:justify-normal justify-center items-center">
-        <div className="md:w-[322px] 2xl:w-96 w-11/12 mt-16">
-          <div className='flex md:flex-col items-center md:items-start px-3 md:px-0 my-3'>
+      <div className="flex flex-wrap w-full h-3/5 md:w-3/5 md:h-full bg-eduTheme pt-16 md:pt-20 md:flex-col md:justify-normal justify-center items-center">
+        <div className="md:w-[322px] 2xl:w-96 w-11/12 md:mt-16 px-1 md:px-0">
+          <div className='flex flex-col items-start my-3'>
             <p className='text-white text-xl font-medium'>Visa Query Solver</p>
-            <h1 className="text-2xl md:text-3xl 2xl:text-4xl font-bold ml-2 md:ml-0 my-2">{selectedCountry} Study Visa</h1>
+            <h1 className="text-2xl md:text-3xl 2xl:text-4xl font-bold my-2">{selectedCountry} Study Visa</h1>
             <p className='text-2xl font-bold'>#FACT {count} </p>
           </div>
           <p
