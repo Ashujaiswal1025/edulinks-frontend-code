@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import * as echarts from 'echarts';
 import { visaQueryResults } from '../quizData/visaQuery.result';
+import visaQueryImage from '../Images/visa-query-image.jpeg';
 
 function VisaQueryResult() {
     const chartRef = useRef(null);
@@ -107,7 +108,7 @@ function VisaQueryResult() {
     return (
         <div className="bg-white w-full h-full flex flex-col md:flex-row justify-center items-center pt-16">
             <div className='w-full md:w-2/5 md:h-full h-2/5'>
-                <img src='https://s3-alpha-sig.figma.com/img/fa73/7adc/9fed5644286b0ecb30091a49628617f0?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PTcoy9EUXZdfSDPanPS0la0Is-BqOuD8v-XFhez37fMEqUe9IZi7MGsm7QWOkU0mGuob~8su2xiuxg5qVRktQOOm8NtoDITolryS5tVfURIvNTKZQhkI-fLt4dZGkQXYixxQiPJ1JTYAyZPcrAnvxZTADKrcPV~dGVc-LkZVQ4-~YV5Au6KCRblJoT8bFud6DFyegYyzM7K9loLWnobfWhuQUr7RoMaYMRXmOLhDSC3SdsLrJ7UM7xSVvt6D12er9X5uORFU61OegpygOCUA3azTIeJova--S6YPmlCC4wU-JrhWK8Gj8f7yl~gUIIED~-Fgs0yda35cYGQblwS8rg__' alt='city' className='w-full object-cover h-full' />
+                <img src={visaQueryImage} alt='city' className='w-full object-cover h-full' />
             </div>
             <div className="md:w-3/5 w-full h-3/5 md:h-full flex flex-col justify-center items-center py-3">
                 <div className='md:w-4/5 font-adramalech text-center'>
