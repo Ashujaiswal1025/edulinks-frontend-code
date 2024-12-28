@@ -180,7 +180,7 @@ function Header() {
                                     height="24"
                                     viewBox="0 0 24 24"
                                     fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns="https://www.w3.org/2000/svg"
                                     className="h-5 w-5 shrink-0"
                                 >
                                     <path
@@ -202,7 +202,7 @@ function Header() {
                         {/* Mobile Menu Button */}
                         <div className="mx-4 mlg:hidden">
                             <button onClick={toggleMenu} className="text-gray-700 focus:outline-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+                                <svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h18M3 8h18M3 12h18M3 16h18" />
                                 </svg>
                             </button>
@@ -214,7 +214,7 @@ function Header() {
                         >
                             <div className="flex justify-end items-center p-3">
                                 <button onClick={closeMenu} className="text-gray-700 focus:outline-none">
-                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                                     </svg>
                                 </button>
@@ -336,7 +336,7 @@ function Header() {
                                         height="24"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns="https://www.w3.org/2000/svg"
                                         className="h-5 w-5 shrink-0"
                                     >
                                         <path
