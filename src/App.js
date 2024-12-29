@@ -13,6 +13,9 @@ import VisaQuerry from './components/VisaQuerry';
 import VisaQueryCountry from './components/VisaQueryCountry';
 import VisaQueryAssessment from './components/VisaQueryAssessment';
 import VisaQueryResult from './components/VisaQueryResult';
+import UniversityCourse from './components/UniversityCourse';
+import UniversityCountry from './components/UniversityCountry';
+import UniversityAssessment from './components/UniversityAssessment';
 
 const AuthGuard = ({ children }) => {
   console.log('children', children);
@@ -50,6 +53,9 @@ function MainContent() {
         <Route path="/edulinks-ai-assistant/visa-query-solver/country" element={<AuthGuard><VisaQueryCountry /></AuthGuard>} />
         <Route path="/edulinks-ai-assistant/visa-query-solver/visa-query-assessment" element={<AuthGuard><VisaQueryAssessment /></AuthGuard>} />
         <Route path="/edulinks-ai-assistant/visa-query-solver/visa-query-result" element={<AuthGuard><VisaQueryResult /></AuthGuard>} />
+        <Route path="/edulinks-ai-assistant/university-course-shortlisting" element={<AuthGuard><UniversityCourse /></AuthGuard>} />
+        <Route path="/edulinks-ai-assistant/university-course-shortlisting/country" element={<AuthGuard><UniversityCountry /></AuthGuard>} />
+        <Route path="/edulinks-ai-assistant/university-course-shortlisting/university-course-assessment" element={<AuthGuard><UniversityAssessment /></AuthGuard>} />
       </Routes>
     </div>
   );  

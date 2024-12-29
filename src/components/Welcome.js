@@ -36,7 +36,7 @@ function Welcome() {
                 <p className='text-sm mx-[3px]'>5 mins</p>
               </div>
               <div className='flex justify-center mt-3'>
-                <Link to=''>
+                <Link to='/edulinks-ai-assistant/university-course-shortlisting'>
                   <img src={start} alt="start" />
                 </Link>
               </div>
