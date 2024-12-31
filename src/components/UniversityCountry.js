@@ -2,6 +2,14 @@ import React ,{useState}from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import group from '../Images/Group 1854.png';
+import { 
+  americaUniversitiesCoursesDetails,
+  australiaUniversitiesCoursesDetails,
+  canadaUniversitiesCoursesDetails,
+  germanyUniversitiesCoursesDetails,
+  newZealandUniversitiesCoursesDetails,
+  ukUniversitiesCoursesDetails
+} from '../quizData/universities-courses.details';
 
 function UniversityCountry() {
 
@@ -10,19 +18,20 @@ function UniversityCountry() {
     const navigate = useNavigate();
 
       const handleCountryQueryData = () => {
-        // console.log('country[selectedOption]12', country[selectedOption]);
-        // const quizDataMap = {
-        //   Germany: germanyQuizData,
-        //   Canada: canadaQuizData,
-        //   UK: ukQuizData,
-        //   USA: usaQuizData,
-        //   'New Zealand': newZealandQuizData,
-        //   Australia: australiaQuizData,
-        // };
-        // const quizData = quizDataMap[country[selectedOption]];
+        console.log('country[selectedOption]12', country[selectedOption]);
+        const quizDataMap = {
+          Germany: germanyUniversitiesCoursesDetails,
+          Canada: canadaUniversitiesCoursesDetails,
+          UK:  ukUniversitiesCoursesDetails,
+          USA: americaUniversitiesCoursesDetails,
+          'New Zealand': newZealandUniversitiesCoursesDetails,
+          Australia: australiaUniversitiesCoursesDetails,
+        };
+
+        const quizData = quizDataMap[country[selectedOption]];
         
-        // console.log('quizData12', quizData);
-        navigate('/edulinks-ai-assistant/university-course-shortlisting/university-course-assessment', { state: { selectedCountry: country[selectedOption] } })
+        console.log('quizData12', quizData);
+        navigate('/edulinks-ai-assistant/university-course-shortlisting/university-course-assessment', { state: { selectedCountry: country[selectedOption], quizData } })
       }
 
   return (
