@@ -155,7 +155,7 @@ function TopUniversityCourse() {
                             </h1>
                             <a href={`https://edulinks.io/${selectedCountry.toLowerCase()}-${top3Courses[currentCourseIndex].toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}>
                                 <button className='px-4 py-[3px] text-eduTheme border border-eduTheme rounded-md mb-2'>
-                                    Explore {' >'}
+                                    Contact {' >'}
                                 </button>
                             </a>
                         </div>
@@ -197,7 +197,7 @@ function TopUniversityCourse() {
                                 href={`https://edulinks.io/${selectedCountry.toLowerCase()}-${course.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}
                             >
                                 <button className="px-4 py-[2px] text-eduTheme border border-eduTheme rounded-md mb-2">
-                                    Explore {' >'}
+                                    Contact {' >'}
                                 </button>
                             </a>
                         </div>

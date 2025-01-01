@@ -22,7 +22,7 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: 'Technical University of Munich',
+            optionDetails: 'Technische Universität München',
             points: 5
           },
           {
@@ -30,7 +30,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: 'Karlsruhe Institute of Technology',
+            optionDetails: 'Universität Karlsruhe',
             points: 3
           }
         ]
@@ -53,15 +53,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: 'University of Göttingen',
+            optionDetails: 'Universität Göttingen',
             points: 5
           },
           {
-            optionDetails: 'University of Stuttgart',
+            optionDetails: 'Universität Stuttgart',
             points: 4
           },
           {
-            optionDetails: 'University of Hamburg',
+            optionDetails: 'Universität Hamburg',
             points: 3
           }
         ]
@@ -84,15 +84,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: 'University of Mannheim',
+            optionDetails: 'Universität Mannheim',
             points: 5
           },
           {
-            optionDetails: 'Technical University of Munich',
+            optionDetails: 'Technische Universität München',
             points: 4
           },
           {
-            optionDetails: 'University of Leipzig',
+            optionDetails: 'Universität Leipzig',
             points: 3
           }
         ]
@@ -115,11 +115,11 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: 'University of Hamburg',
+            optionDetails: 'Universität Hamburg',
             points: 5
           },
           {
-            optionDetails: 'Humboldt University of Berlin',
+            optionDetails: 'Humboldt-Universität zu Berlin',
             points: 4
           },
           {
@@ -146,15 +146,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: 'University of Heidelberg',
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg ',
             points: 5
           },
           {
-            optionDetails: 'University of Freiburg',
+            optionDetails: 'Universität Freiburg',
             points: 4
           },
           {
-            optionDetails: 'University of Düsseldorf',
+            optionDetails: 'Universität Düsseldorf ',
             points: 3
           }
         ]
@@ -177,15 +177,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: 'University of Bonn',
+            optionDetails: 'Rheinische Friedrich-Wilhelms-Universität Bonn',
             points: 5
           },
           {
-            optionDetails: 'University of Tübingen',
+            optionDetails: 'Universität Tübingen',
             points: 4
           },
           {
-            optionDetails: 'Humboldt University of Berlin',
+            optionDetails: 'Humboldt-Universität zu Berlin',
             points: 3
           }
         ]
@@ -224,15 +224,15 @@ export const germanyUniversitiesCoursesDetails = [
         options: 'Research and Academia',
         universitiesOption: [
           {
-            optionDetails: 'University of Heidelberg',
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg ',
             points: 5
           },
           {
-            optionDetails: 'Technical University of Munich',
+            optionDetails: 'Technische Universität München',
             points: 4
           },
           {
-            optionDetails: 'University of Freiburg',
+            optionDetails: 'Universität Freiburg',
             points: 3
           }
         ]
@@ -245,11 +245,11 @@ export const germanyUniversitiesCoursesDetails = [
             points: 5
           },
           {
-            optionDetails: 'Karlsruhe Institute of Technology',
+            optionDetails: 'Universität Karlsruhe',
             points: 4
           },
           {
-            optionDetails: 'University of Mannheim',
+            optionDetails: 'Universität Mannheim',
             points: 3
           }
         ],
@@ -258,7 +258,7 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Creative Professional",
         universitiesOption: [
           {
-            optionDetails: "University of Hamburg",
+            optionDetails: "Universität Hamburg",
             points: 5
           },
           {
@@ -266,7 +266,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 3
           }
         ]
@@ -275,15 +275,15 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Public Policy or Governance",
         optionsuniversitiesOption: [
           {
-            optionDetails: "University of Bonn",
+            optionDetails: "Rheinische Friedrich-Wilhelms-Universität Bonn",
             points: 5
           },
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 4
           },
           {
-            optionDetails: "University of Leipzig",
+            optionDetails: "Universität Leipzig",
             points: 3
           }
         ]
@@ -292,15 +292,15 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Healthcare Professional",
         optionsuniversitiesOption: [
           {
-            optionDetails: "University of Düsseldorf",
+            optionDetails: "Universität Düsseldorf ",
             points: 5
           },
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 4
           },
           {
-            optionDetails: "University of Heidelberg",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
             points: 3
           }
         ]
@@ -314,15 +314,15 @@ export const germanyUniversitiesCoursesDetails = [
         options: "English",
         universitiesOption: [
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 5
           },
           {
-            optionDetails: "University of Stuttgart",
+            optionDetails: "Universität Stuttgart",
             points: 4
           },
           {
-            optionDetails: "University of Mannheim",
+            optionDetails: "Universität Mannheim",
             points: 3
           }
         ]
@@ -335,7 +335,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 5
           },
           {
-            optionDetails: "Karlsruhe Institute of Technology",
+            optionDetails: "Universität Karlsruhe",
             points: 4
           },
           {
@@ -348,15 +348,15 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Both",
         universitiesOption: [
           {
-            optionDetails: "Ludwig Maximilian University of Munich",
+            optionDetails: "Ludwig-Maximilians-Universität München",
             points: 5
           },
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 4
           },
           {
-            optionDetails: "University of Leipzig",
+            optionDetails: "Universität Leipzig",
             points: 3
           }
         ]
@@ -370,7 +370,7 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Fully funded or no restrictions",
         universitiesOption: [
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 5
           },
           {
@@ -378,7 +378,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "University of Heidelberg",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
             points: 3
           }
         ]
@@ -387,15 +387,15 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Budget up to €10,000 per year",
         universitiesOption: [
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 5
           },
           {
-            optionDetails: "University of Leipzig",
+            optionDetails: "Universität Leipzig",
             points: 4
           },
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 3
           }
         ]
@@ -404,15 +404,15 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Scholarships or financial aid required",
         universitiesOption: [
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 5
           },
           {
-            optionDetails: "University of Heidelberg",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
             points: 4
           },
           {
-            optionDetails: "University of Bonn",
+            optionDetails: "Rheinische Friedrich-Wilhelms-Universität Bonn",
             points: 3
           }
         ]
@@ -444,11 +444,11 @@ export const germanyUniversitiesCoursesDetails = [
             points: 5
           },
           {
-            optionDetails: "University of Stuttgart",
+            optionDetails: "Universität Stuttgart",
             points: 4
           },
           {
-            optionDetails: "Karlsruhe Institute of Technology",
+            optionDetails: "Universität Karlsruhe",
             points: 3
           }
         ]
@@ -471,15 +471,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 5
           },
           {
-            optionDetails: "University of Heidelberg",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
             points: 4
           },
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 3
           }
         ]
@@ -502,15 +502,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 5
           },
           {
-            optionDetails: "University of Mannheim",
+            optionDetails: "Universität Mannheim",
             points: 4
           },
           {
-            optionDetails: "University of Leipzig",
+            optionDetails: "Universität Leipzig",
             points: 3
           }
         ]
@@ -533,7 +533,7 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Hamburg",
+            optionDetails: "Universität Hamburg",
             points: 5
           },
           {
@@ -541,7 +541,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 3
           }
         ]
@@ -564,15 +564,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 5
           },
           {
-            optionDetails: "Technical University of Dresden",
+            optionDetails: "Technische Universität Dresden",
             points: 4
           },
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 3
           }
         ]
@@ -595,15 +595,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Mannheim",
+            optionDetails: "Universität Mannheim",
             points: 5
           },
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 4
           },
           {
-            optionDetails: "Ludwig Maximilian University of Munich",
+            optionDetails: "Ludwig-Maximilians-Universität München",
             points: 3
           }
         ]
@@ -631,7 +631,7 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 5
           },
           {
@@ -639,7 +639,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "University of Mannheim",
+            optionDetails: "Universität Mannheim",
             points: 3
           }
         ]
@@ -662,15 +662,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Heidelberg",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
             points: 5
           },
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 4
           },
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 3
           }
         ]
@@ -697,11 +697,11 @@ export const germanyUniversitiesCoursesDetails = [
             points: 5
           },
           {
-            optionDetails: "University of Stuttgart",
+            optionDetails: "Universität Stuttgart",
             points: 4
           },
           {
-            optionDetails: "Karlsruhe Institute of Technology",
+            optionDetails: "Universität Karlsruhe",
             points: 3
           }
         ]
@@ -724,15 +724,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Leipzig",
+            optionDetails: "Universität Leipzig",
             points: 5
           },
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 4
           },
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 3
           }
         ]
@@ -755,7 +755,7 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Hamburg",
+            optionDetails: "Universität Hamburg",
             points: 5
           },
           {
@@ -763,7 +763,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 3
           }
         ]
@@ -786,15 +786,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 5
           },
           {
-            optionDetails: "University of Mannheim",
+            optionDetails: "Universität Mannheim",
             points: 4
           },
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 3
           }
         ]
@@ -826,11 +826,11 @@ export const germanyUniversitiesCoursesDetails = [
             points: 5
           },
           {
-            optionDetails: "Karlsruhe Institute of Technology",
+            optionDetails: "Universität Karlsruhe",
             points: 4
           },
           {
-            optionDetails: "University of Stuttgart",
+            optionDetails: "Universität Stuttgart",
             points: 3
           }
         ]
@@ -853,11 +853,11 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 5
           },
           {
-            optionDetails: "University of Mannheim",
+            optionDetails: "Universität Mannheim",
             points: 4
           },
           {
@@ -884,7 +884,7 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Hamburg",
+            optionDetails: "Universität Hamburg",
             points: 5
           },
           {
@@ -892,7 +892,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 3
           }
         ]
@@ -915,15 +915,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 5
           },
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 4
           },
           {
-            optionDetails: "University of Heidelberg",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
             points: 3
           }
         ]
@@ -946,15 +946,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Bonn",
+            optionDetails: "Rheinische Friedrich-Wilhelms-Universität Bonn",
             points: 5
           },
           {
-            optionDetails: "University of Tübingen",
+            optionDetails: "Universität Tübingen",
             points: 4
           },
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 3
           }
         ]
@@ -977,15 +977,15 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 5
           },
           {
-            optionDetails: "Technical University of Dresden",
+            optionDetails: "Technische Universität Dresden",
             points: 4
           },
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 3
           }
         ]
@@ -999,15 +999,15 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Southern Germany (e.g., Munich, Stuttgart)",
         universitiesOption: [
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 5
           },
           {
-            optionDetails: "University of Stuttgart",
+            optionDetails: "Universität Stuttgart",
             points: 4
           },
           {
-            optionDetails: "Ludwig Maximilian University of Munich",
+            optionDetails: "Ludwig-Maximilians-Universität München",
             points: 3
           }
         ]
@@ -1016,11 +1016,11 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Northern Germany (e.g., Hamburg, Bremen)",
         universitiesOption: [
           {
-            optionDetails: "University of Hamburg",
+            optionDetails: "Universität Hamburg",
             points: 5
           },
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 4
           },
           {
@@ -1037,11 +1037,11 @@ export const germanyUniversitiesCoursesDetails = [
             points: 5
           },
           {
-            optionDetails: "University of Bonn",
+            optionDetails: "Rheinische Friedrich-Wilhelms-Universität Bonn",
             points: 4
           },
           {
-            optionDetails: "University of Düsseldorf",
+            optionDetails: "Universität Düsseldorf ",
             points: 3
           }
         ]
@@ -1050,11 +1050,11 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Eastern Germany (e.g., Berlin, Dresden)",
         universitiesOption: [
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 5
           },
           {
-            optionDetails: "Technical University of Dresden",
+            optionDetails: "Technische Universität Dresden",
             points: 4
           },
           {
@@ -1067,83 +1067,83 @@ export const germanyUniversitiesCoursesDetails = [
         options: "No preference",
         universitiesOption: [
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 3
           },
           {
-            optionDetails: "Ludwig Maximilian University of Munich",
+            optionDetails: "Ludwig-Maximilians-Universität München",
             points: 3
           },
           {
-            optionDetails: "Heidelberg University",
+            optionDetails: "Ruprecht-Karls-Universität Heidelbergy",
             points: 3
           },
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 3
           },
           {
-            optionDetails: "Free University of Berlin",
+            optionDetails: "Freie Universität Berlin",
             points: 3
           },
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 3
           },
           {
-            optionDetails: "University of Tübingen",
+            optionDetails: "Universität Tübingen",
             points: 3
           },
           {
-            optionDetails: "University of Bonn",
+            optionDetails: "Rheinische Friedrich-Wilhelms-Universität Bonn",
             points: 3
           },
           {
-            optionDetails: "University of Hamburg",
+            optionDetails: "Universität Hamburg",
             points: 3
           },
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 3
           },
           {
-            optionDetails: "University of Mannheim",
+            optionDetails: "Universität Mannheim",
             points: 3
           },
           {
-            optionDetails: "Rheinisch-Westfälische Technische Hochschule Aachen",
+            optionDetails: "RWTH Aachen University",
             points: 3
           },
           {
-            optionDetails: "University of Stuttgart",
+            optionDetails: "Universität Stuttgart",
             points: 3
           },
           {
-            optionDetails: "University of Erlangen-Nuremberg",
+            optionDetails: "Universität Erlangen-Nürnberg",
             points: 3
           },
           {
-            optionDetails: "University of Ulm",
+            optionDetails: "Universität Ulm",
             points: 3
           },
           {
-            optionDetails: "University of Leipzig",
+            optionDetails: "Universität Leipzig",
             points: 3
           },
           {
-            optionDetails: "University of Düsseldorf",
+            optionDetails: "Universität Düsseldorf ",
             points: 3
           },
           {
-            optionDetails: "University of Konstanz",
+            optionDetails: "Universität Konstanz ",
             points: 3
           },
           {
-            optionDetails: "Karlsruhe Institute of Technology - KIT",
+            optionDetails: "Universität Karlsruhe",
             points: 3
           },
           {
-            optionDetails: "Technical University of Dresden",
+            optionDetails: "Technische Universität Dresden",
             points: 3
           }
         ]
@@ -1157,7 +1157,7 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Industry professionals for career growth",
         universitiesOption: [
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 5
           },
           {
@@ -1165,7 +1165,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "University of Mannheim",
+            optionDetails: "Universität Mannheim",
             points: 3
           }
         ]
@@ -1174,15 +1174,15 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Academic experts for research opportunities",
         universitiesOption: [
           {
-            optionDetails: "University of Heidelberg",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
             points: 5
           },
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 4
           },
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 3
           }
         ]
@@ -1191,7 +1191,7 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Mentors for creative pursuits",
         universitiesOption: [
           {
-            optionDetails: "University of Hamburg",
+            optionDetails: "Universität Hamburg",
             points: 5
           },
           {
@@ -1199,7 +1199,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 3
           }
         ]
@@ -1208,15 +1208,15 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Public policy advisors",
         universitiesOption: [
           {
-            optionDetails: "University of Bonn",
+            optionDetails: "Rheinische Friedrich-Wilhelms-Universität Bonn",
             points: 5
           },
           {
-            optionDetails: "Humboldt University of Berlin",
+            optionDetails: "Humboldt-Universität zu Berlin",
             points: 4
           },
           {
-            optionDetails: "University of Leipzig",
+            optionDetails: "Universität Leipzig",
             points: 3
           }
         ]
@@ -1449,7 +1449,7 @@ export const canadaUniversitiesCoursesDetails = [
     answer: [
       {
         options: "Industry-focused career",
-        courses: [
+        coursesOption: [
           {
             courseDetails: "Bachelor of Science in Data Science",
             points: 5
@@ -1480,7 +1480,7 @@ export const canadaUniversitiesCoursesDetails = [
       },
       {
         options: "Research and Academia",
-        courses: [
+        coursesOption: [
           {
             courseDetails: "Bachelor of Science in Biotechnology",
             points: 5
@@ -1511,7 +1511,7 @@ export const canadaUniversitiesCoursesDetails = [
       },
       {
         options: "Creative Professional",
-        courses: [
+        coursesOption: [
           {
             courseDetails: "Bachelor of Arts in Film and Media Studies",
             points: 5
@@ -1542,7 +1542,7 @@ export const canadaUniversitiesCoursesDetails = [
       },
       {
         options: "Healthcare Professional",
-        courses: [
+        coursesOption: [
           {
             courseDetails: "Bachelor of Science in Nursing",
             points: 5
@@ -1573,7 +1573,7 @@ export const canadaUniversitiesCoursesDetails = [
       },
       {
         options: "Sustainability Advocate",
-        courses: [
+        coursesOption: [
           {
             courseDetails: "Bachelor of Science in Environmental Science",
             points: 5
@@ -1767,7 +1767,7 @@ export const canadaUniversitiesCoursesDetails = [
     answer: [
       {
         options: "Practical and hands-on",
-        courses: [
+        coursesOption: [
           {
             courseDetails: "Diploma in Automotive Service Technology",
             points: 5
@@ -1798,7 +1798,7 @@ export const canadaUniversitiesCoursesDetails = [
       },
       {
         options: "Research-intensive and theoretical",
-        courses: [
+        coursesOption: [
           {
             courseDetails: "Bachelor of Science in Biotechnology",
             points: 5
@@ -1829,7 +1829,7 @@ export const canadaUniversitiesCoursesDetails = [
       },
       {
         options: "Creative and collaborative",
-        courses: [
+        coursesOption: [
           {
             courseDetails: "Bachelor of Arts in Media and Communication Studies",
             points: 5
@@ -1862,7 +1862,7 @@ export const canadaUniversitiesCoursesDetails = [
         options: "Fully funded or no restrictions",
         universitiesOption: [
           {
-            optionDetails: "Technical University of Munich",
+            optionDetails: "Technische Universität München",
             points: 5
           },
           {
@@ -1870,7 +1870,7 @@ export const canadaUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "University of Heidelberg",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
             points: 3
           }
         ]
@@ -1879,15 +1879,15 @@ export const canadaUniversitiesCoursesDetails = [
         options: "Budget up to €10,000 per year",
         universitiesOption: [
           {
-            optionDetails: "University of Göttingen",
+            optionDetails: "Universität Göttingen",
             points: 5
           },
           {
-            optionDetails: "University of Leipzig",
+            optionDetails: "Universität Leipzig",
             points: 4
           },
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 3
           }
         ]
@@ -1896,15 +1896,15 @@ export const canadaUniversitiesCoursesDetails = [
         options: "Scholarships or financial aid required",
         universitiesOption: [
           {
-            optionDetails: "University of Freiburg",
+            optionDetails: "Universität Freiburg",
             points: 5
           },
           {
-            optionDetails: "University of Heidelberg",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
             points: 4
           },
           {
-            optionDetails: "University of Bonn",
+            optionDetails: "Rheinische Friedrich-Wilhelms-Universität Bonn",
             points: 3
           }
         ]
@@ -6680,7 +6680,7 @@ export const ukUniversitiesCoursesDetails = [
     answer: [
       {
         options: "Engineering and Technology",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Science in Mechanical Engineering",
             points: 5
@@ -6711,7 +6711,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Business and Management",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Business Administration (BBA)",
             points: 5
@@ -6742,7 +6742,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Health Sciences",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Science in Nursing",
             points: 5
@@ -6773,7 +6773,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Arts and Humanities",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Arts in Media and Communication Studies",
             points: 5
@@ -6804,7 +6804,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Natural Sciences",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Science in Environmental Science",
             points: 5
@@ -6865,7 +6865,7 @@ export const ukUniversitiesCoursesDetails = [
     answer: [
       {
         options: "Building tangible systems or prototypes",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Science in Mechanical Engineering",
             points: 5
@@ -6896,7 +6896,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Researching and exploring new ideas",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Science in Biotechnology",
             points: 5
@@ -6927,7 +6927,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Solving data-driven problems",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Science in Data Science",
             points: 5
@@ -6958,7 +6958,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Writing and creating impactful media",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Arts in Media Studies",
             points: 5
@@ -6989,7 +6989,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Designing solutions to global challenges",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Science in Environmental Science",
             points: 5
@@ -7025,7 +7025,7 @@ export const ukUniversitiesCoursesDetails = [
     answer: [
       {
         options: "Logical reasoning and problem-solving",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Science in Data Science",
             points: 5
@@ -7056,7 +7056,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Creativity and innovation",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Arts in Media and Communication Studies",
             points: 5
@@ -7087,7 +7087,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Leadership and teamwork",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Commerce",
             points: 5
@@ -7118,7 +7118,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Empathy and interpersonal skills",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Science in Nursing",
             points: 5
@@ -7149,7 +7149,7 @@ export const ukUniversitiesCoursesDetails = [
       },
       {
         options: "Research and exploration",
-        courses: [
+        coursesOption: [
           {
             optionDetails: "Bachelor of Science in Biotechnology",
             points: 5
