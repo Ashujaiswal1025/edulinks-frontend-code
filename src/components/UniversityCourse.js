@@ -24,7 +24,7 @@ function UniversityCourse() {
           <div className="font-robotoCondensed text-center md:text-left md:ml-8 xl:ml-0">
               <h3 className="text-2xl md:text-4xl text-white font-medium my-5">Welcome to your</h3>
               <h2 className="font-adramalech text-4xl text-wrap md:text-[64px] leading-none my-3">
-                  University/Course Shortlisting
+                  University/Course <br/> Shortlisting
               </h2>
               <h4 className="md:text-2xl text-xl text-white font-medium">
                  Which helps you estimate your eligibility for a specific<br/>
