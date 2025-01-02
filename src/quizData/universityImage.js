@@ -18,7 +18,7 @@ export const universitiesByCountry = {
       { universityName: "Universität Leipzig", imgPath: "image-19-3-1024x505.png" },
       { universityName: "Universität Düsseldorf", imgPath: "image-20-3-1024x505.png" },
       { universityName: "Universität Konstanz", imgPath: "image-21-3-1024x505.png" },
-      { universityName: "Karlsruhe Institute of Technology - KIT", imgPath: "image-22-3-1024x505.png" },
+      { universityName: "Universität Karlsruhe", imgPath: "image-22-3-1024x505.png" },
       { universityName: "Technische Universität Dresden", imgPath: "image-24-3-1024x505.png" }
     ],
     
