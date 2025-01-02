@@ -37,7 +37,10 @@ function Welcome() {
               </div>
               <div className='flex justify-center mt-3'>
                 <Link to='/edulinks-ai-assistant/university-course-shortlisting'>
-                  <img src={start} alt="start" />
+                  {/* <img src={start} alt="start" /> */}
+                  <button className='px-2 py-[1px] text-[16px] border border-eduTheme rounded-full'>
+                    Start now <span className="text-eduTheme"> &gt; </span>
+                  </button>
                 </Link>
               </div>
             </div>
@@ -55,7 +58,9 @@ function Welcome() {
               </div>
               <div className='flex justify-center mt-3'>
                 <Link to='/edulinks-ai-assistant/career-path-test'>
-                  <img src={start} alt="start" />
+                  <button className='px-2 py-[1px] text-[16px] border border-eduTheme rounded-full'>
+                    Start now <span className="text-eduTheme"> &gt; </span>
+                  </button>
                 </Link>
               </div>
             </div>
@@ -75,7 +80,9 @@ function Welcome() {
               </div>
               <div className='flex justify-center mt-3'>
                 <Link to='/edulinks-ai-assistant/visa-query-solver'>
-                  <img src={start} alt="start" />
+                  <button className='px-2 py-[1px] text-[16px] border border-eduTheme rounded-full'>
+                    Start now <span className="text-eduTheme"> &gt; </span>
+                  </button>
                 </Link>
               </div>
             </div>
@@ -93,7 +100,9 @@ function Welcome() {
               </div>
               <div className='flex justify-center mt-3'>
                 <Link to='/edulinks-ai-assistant/chat-with-me'>
-                  <img src={start} alt="start" />
+                  <button className='px-2 py-[1px] text-[16px] border border-eduTheme rounded-full'>
+                    Start now <span className="text-eduTheme"> &gt; </span>
+                  </button>
                 </Link>
               </div>
             </div>

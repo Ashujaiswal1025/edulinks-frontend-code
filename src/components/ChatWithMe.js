@@ -5,6 +5,7 @@ import Career from "../Images/Career Pathway Test 1.png";
 import Visa from "../Images/Visa Query Solver 1.png";
 import parse from "html-react-parser";
 import { marked } from "marked";
+import { Link } from "react-router-dom";
 
 function ChatWithMe() {
   const [input, setInput] = useState("");
@@ -113,32 +114,38 @@ function ChatWithMe() {
             <div className="w-[78px] h-[78px] bg-white rounded-full flex items-center justify-center">
               <img src={book} alt="Book icon" className="w-[52px] h-[52px]" />
             </div>
-            <div className="ml-2">
-              <h4>University/Course</h4>
-              <h4>Shortlisting</h4>
-            </div>
+            <Link to='/edulinks-ai-assistant/university-course-shortlisting'>
+              <div className="ml-2">
+                <h4>University/Course</h4>
+                <h4>Shortlisting</h4>
+              </div>
+            </Link>
           </div>
           <div className="flex items-center text-white mb-6">
             <div className="w-[78px] h-[78px] bg-white rounded-full flex items-center justify-center">
               <img src={Career} alt="Career icon" className="w-[52px] h-[52px]" />
             </div>
-            <div className="ml-2">
-              <h4>Career Path</h4>
-              <h4>Test</h4>
-            </div>
+            <Link to='/edulinks-ai-assistant/career-path-test'>
+              <div className="ml-2">
+                <h4>Career Path</h4>
+                <h4>Test</h4>
+              </div>
+            </Link>
           </div>
           <div className="flex items-center text-white">
             <div className="w-[78px] h-[78px] bg-white rounded-full flex items-center justify-center">
               <img src={Visa} alt="Visa icon" className="w-[52px] h-[52px]" />
             </div>
-            <div className="ml-2">
-              <h4>Visa Query</h4>
-              <h4>Solver</h4>
-            </div>
+            <Link to='/edulinks-ai-assistant/visa-query-solver'>
+              <div className="ml-2">
+                <h4>Visa Query</h4>
+                <h4>Solver</h4>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="flex-grow"></div>
-        <button className="lg:w-[261px] lg:h-[34px] p-1 lg:p-0 bg-white text-xl font-bold text-black rounded-md mt-10 lg:mt-0">
+        <button onClick={() => window.location.href = "https://cal.com/edulink-9gf5fp/30min"} className="lg:w-[261px] lg:h-[34px] p-1 lg:p-0 bg-white text-xl font-bold text-black rounded-md mt-10 lg:mt-0">
           Book 1:1 Counseling Session
         </button>
       </div>

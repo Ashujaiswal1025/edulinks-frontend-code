@@ -33,9 +33,25 @@ function Header() {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-    const toggleDropdown = () => {
-        setIsDropdownOpen((prev) => !prev);
+    // const toggleDropdown = () => {
+    //     setIsDropdownOpen((prev) => !prev);
+    // };
+
+    const [dropdownsOpen, setDropdownsOpen] = useState({
+        study: false,
+        services: false,
+        universities: false,
+    });
+    
+    const toggleDropdown = (dropdown) => {
+        setDropdownsOpen(prevState => ({
+            ...prevState,
+            [dropdown]: !prevState[dropdown], // Toggle the specific dropdown
+        }));
     };
+    
+    // In the JSX, pass the respective dropdown identifier to toggle the dropdown
+    
 
     const study = [
         { country: 'Germany', url: 'https://edulinks.io/study-in-germany/' },
@@ -155,7 +171,7 @@ function Header() {
                             </div>
                             {/* Edulink AI Assistance */}
                             <div className="bot_btn">
-                                <button  onClick={() => navigate('/edulinks-ai-assistant')} className="py-1 px-3.5 rounded-lg text-base border-0.7 border-black  text-black font-normal hover:bg-eduTheme flex items-center justify-center">
+                                <button onClick={() => navigate('/edulinks-ai-assistant')} className="py-1 px-3.5 rounded-lg text-base border-0.7 border-black  text-black font-normal hover:bg-eduTheme flex items-center justify-center">
                                     Edulinks AI Assistance
                                 </button>
                             </div>
@@ -168,7 +184,7 @@ function Header() {
                         </div>
                     </div>)
                 }
-                <div className={`${hideLinks ? 'flex mr-10' : 'hidden'} mlg:flex`}>
+                <div className={`${hideLinks ? 'flex mr-10 justify-start' : 'hidden'} mlg:flex`}>
                     {!showLogout && (
                         <div
                             className="flex justify-center items-center text-base rounded-md cursor-pointer font-bold font-robotoCondensed"
@@ -222,26 +238,24 @@ function Header() {
                             <div className="flex flex-col mt-4 ml-4 space-y-2 text-sm font-robotoCondensed">
                                 <Link to="https://edulinks.io/" className="block px-4 py-2 hover:text-green-500">Home</Link>
                                 <Link to="https://edulinks.io/about-us/" className="block px-4 py-2 hover:text-green-500">About Us</Link>
+                                {/* Study Destination Dropdown */}
                                 <div className="relative px-4 py-2">
-                                    {/* Trigger Button */}
                                     <span
                                         className="cursor-pointer flex items-center justify-between"
+                                        onClick={() => toggleDropdown('study')} // Pass the dropdown name
                                     >
                                         <p className='font-normal hover:text-green-500'>
-                                            Study Destination{" "}
+                                            Study Destination
                                         </p>
                                         <img
                                             src={drop}
-                                            onClick={toggleDropdown}
                                             alt="drop"
-                                            className={`p-1 hover:border hover:border-green-500 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : "rotate-0"
-                                                }`}
+                                            className={`p-1 hover:border hover:border-green-500 transition-transform duration-200 ${dropdownsOpen.study ? "rotate-180" : "rotate-0"}`}
                                         />
                                     </span>
 
-                                    {/* Dropdown Menu */}
-                                    {isDropdownOpen && (
-                                        <div className="w-64 absolute bg-white rounded-md shadow-md mt-1">
+                                    {dropdownsOpen.study && (
+                                        <div className="w-64 absolute bg-white rounded-md shadow-md mt-1 z-10">
                                             {study.map((item, index) => (
                                                 <Link
                                                     key={index}
@@ -254,26 +268,25 @@ function Header() {
                                         </div>
                                     )}
                                 </div>
+
+                                {/* Services Dropdown */}
                                 <div className="relative px-4 py-2">
-                                    {/* Trigger Button */}
                                     <span
                                         className="cursor-pointer flex items-center justify-between"
+                                        onClick={() => toggleDropdown('services')} // Pass the dropdown name
                                     >
                                         <p className='font-normal hover:text-green-500'>
-                                            Services{" "}
+                                            Services
                                         </p>
                                         <img
                                             src={drop}
-                                            onClick={toggleDropdown}
                                             alt="drop"
-                                            className={`p-1 hover:border hover:border-green-500 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : "rotate-0"
-                                                }`}
+                                            className={`p-1 hover:border hover:border-green-500 transition-transform duration-200 ${dropdownsOpen.services ? "rotate-180" : "rotate-0"}`}
                                         />
                                     </span>
 
-                                    {/* Dropdown Menu */}
-                                    {isDropdownOpen && (
-                                        <div className="w-64 absolute bg-white rounded-md shadow-md mt-1">
+                                    {dropdownsOpen.services && (
+                                        <div className="w-64 absolute bg-white rounded-md shadow-md mt-1 z-10">
                                             {career.map((item, index) => (
                                                 <Link
                                                     key={index}
@@ -286,38 +299,38 @@ function Header() {
                                         </div>
                                     )}
                                 </div>
+
+                                {/* Universities Dropdown */}
                                 <div className="relative px-4 py-2">
-                                    {/* Trigger Button */}
                                     <span
                                         className="cursor-pointer flex items-center justify-between"
+                                        onClick={() => toggleDropdown('universities')} // Pass the dropdown name
                                     >
                                         <p className='font-normal hover:text-green-500'>
-                                            Top Universities{" "}
+                                            Top Universities
                                         </p>
                                         <img
                                             src={drop}
-                                            onClick={toggleDropdown}
                                             alt="drop"
-                                            className={`p-1 hover:border hover:border-green-500 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : "rotate-0"
-                                                }`}
+                                            className={`p-1 hover:border hover:border-green-500 transition-transform duration-200 ${dropdownsOpen.universities ? "rotate-180" : "rotate-0"}`}
                                         />
                                     </span>
 
-                                    {/* Dropdown Menu */}
-                                    {isDropdownOpen && (
-                                        <div className="w-64 absolute bg-white rounded-md shadow-md mt-1">
+                                    {dropdownsOpen.universities && (
+                                        <div className="w-64 absolute bg-white rounded-md shadow-md mt-1 z-10">
                                             {University.map((item, index) => (
                                                 <Link
                                                     key={index}
                                                     to={item.url}
                                                     className="block px-4 py-2 text-gray-800 border-y hover:bg-eduTheme"
                                                 >
-                                                    Top 20 Univerities in {item.country}
+                                                    Top 20 Universities in {item.country}
                                                 </Link>
                                             ))}
                                         </div>
                                     )}
                                 </div>
+
                                 <Link to="/edulinks-ai-assistant" className="block px-4 py-2 hover:text-green-500">Edulinks AI Assistant</Link>
                                 <div className="flex-grow"></div>
                                 <div className="book_btn">
