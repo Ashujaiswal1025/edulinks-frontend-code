@@ -36,7 +36,7 @@ function UniversityCountry() {
 
   return (
     <div className="bg-white flex flex-col md:flex-row w-full h-full font-robotoCondensed">
-      <div className="flex sticky flex-wrap w-full h-3/5 md:w-3/5 md:h-full bg-eduTheme pt-20 md:flex-col md:justify-normal justify-center items-center">
+      <div className="flex sticky flex-wrap w-full h-3/5 md:w-3/5 md:h-full bg-eduTheme md:pt-20 pt-[90px] pb-2 md:flex-col md:justify-normal justify-center items-center">
         <div className="md:w-[322px] 2xl:w-96 w-11/12 my-4 md:mt-16">
           <div className='flex md:flex-col items-center md:items-start px-3 md:px-0'>
             <img src={book} alt="history" className="w-20 h-20 md:w-32 md:h-32 mb-2" />

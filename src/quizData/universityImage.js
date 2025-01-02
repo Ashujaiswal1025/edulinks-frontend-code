@@ -90,7 +90,7 @@ export const universitiesByCountry = {
         { universityName: "University of Tasmania", imgPath: "image-2024-10-13T212647.564.png" }
       ],
     
-      NewZealand: [
+     'New Zealand': [
         { universityName: "University of Auckland", imgPath: "image-40-1.png" },
         { universityName: "University of Otago", imgPath: "image-41-1.png" },
         { universityName: "Victoria University of Wellington", imgPath: "image-42-1.png" },
