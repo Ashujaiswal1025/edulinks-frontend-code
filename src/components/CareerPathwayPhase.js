@@ -34,7 +34,7 @@ function CareerPathwayPhase() {
     setSelectedAnswers((prevAnswers) => [...prevAnswers, newAnswer]);
   };
 
-  const showTopCarrer = async() => {
+  const showTopCarrer = async () => {
     console.log('scoreData12', scoreData);
     await handleNext()
     const sortedEntries = Object.entries(scoreData)
@@ -130,7 +130,7 @@ function CareerPathwayPhase() {
             const isCompleted = progressValue === 100;
             return (
               <div key={index} className="flex md:flex-col items-center">
-                <div className={`relative w-14 h-14 md:w-20 md:h-20 ${isCompleted ? 'md:mb-0' : 'ml-2 md:ml-0 md:mb-6'}`}>
+                <div className={`relative w-14 h-14 md:w-[89px] md:h-[89px] ${isCompleted ? 'md:mb-0' : 'ml-2 md:ml-0 md:mb-6'}`}>
                   {/* Outer Circular Ring */}
                   <div
                     className={`absolute inset-0 rounded-full`}
@@ -148,8 +148,10 @@ function CareerPathwayPhase() {
                   {/* Inner Circular Hole */}
                   <div className="absolute inset-[3px] md:inset-1 bg-white rounded-full flex flex-col items-center justify-center border-2 md:border-4 border-eduTheme">
                     {/* Center Content */}
-                    <p className="text-xs md:text-lg md:font-medium leading-3">Phase</p>
-                    <p className="text-lg md:text-xl font-bold">0{index + 1}</p>
+                    <div className='text-center'>
+                      <p className="text-xs md:text-lg md:font-medium leading-3">Phase</p>
+                      <p className="text-lg -mt-1 md:-mt-2 md:text-2xl font-bold">0{index + 1}</p>
+                    </div>
                   </div>
                 </div>
                 {/* Conditionally Render a Line Between Phases */}
