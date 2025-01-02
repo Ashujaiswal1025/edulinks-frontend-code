@@ -13,7 +13,7 @@ import {
 
 function UniversityCountry() {
 
-  const country = ['Germany', 'Canada', 'UK', 'USA', 'New Zealand', 'Australia'];
+  const country = ['Germany', 'Canada', 'UK', 'USA', 'New Zealand', 'Australia', 'Other'];
   const [selectedOption, setSelectedOption] = useState(null); // Selected option
   const navigate = useNavigate();
 
@@ -28,7 +28,13 @@ function UniversityCountry() {
       Australia: australiaUniversitiesCoursesDetails,
     };
 
+
     const quizData = quizDataMap[country[selectedOption]];
+
+    if (country[selectedOption] === 'Other') {
+      window.location.href = "https://cal.com/edulink-9gf5fp/30min";
+      return;
+    }
 
     console.log('quizData12', quizData);
     navigate('/edulinks-ai-assistant/university-course-shortlisting/university-course-assessment', { state: { selectedCountry: country[selectedOption], quizData } })
@@ -55,7 +61,7 @@ function UniversityCountry() {
         <div className="w-full flex flex-col justify-center items-center py-5 px-3 md:p-0">
           <div className="w-full md:w-3/4 md:h-32 py-2 md:py-3 bg-custom-gradient  flex justify-center items-center my-6">
             <h1 className="text-lg md:text-xl lg:text-2xl w-3/4 md:p-4 p-2 font-medium text-white text-center">
-               In which part of the world would you like to work?
+              In which part of the world would you like to work?
             </h1>
           </div>
           {country.map((option, index) => (

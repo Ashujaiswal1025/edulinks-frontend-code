@@ -6,7 +6,7 @@ import { germanyQuizData, canadaQuizData, newZealandQuizData, australiaQuizData,
 
 
 function VisaQueryCountry() {
-  const country = ['Germany', 'Canada', 'UK', 'USA', 'New Zealand', 'Australia'];
+  const country = ['Germany', 'Canada', 'UK', 'USA', 'New Zealand', 'Australia','Other'];
   const [selectedOption, setSelectedOption] = useState(null); // Selected option
   const navigate = useNavigate();
 
@@ -21,6 +21,10 @@ function VisaQueryCountry() {
       Australia: australiaQuizData,
     };
     const quizData = quizDataMap[country[selectedOption]];
+    if(country[selectedOption] === 'Other'){
+       window.location.href = "https://cal.com/edulink-9gf5fp/30min";
+       return;
+    }
     
     console.log('quizData12', quizData);
     navigate('/edulinks-ai-assistant/visa-query-solver/visa-query-assessment', { state: { selectedCountry: country[selectedOption], quizData } })

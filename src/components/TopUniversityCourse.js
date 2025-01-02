@@ -65,7 +65,7 @@ function TopUniversityCourse() {
                             </h1>
                             <a href={`https://edulinks.io/${selectedCountry === "New Zealand" ? "nz" : selectedCountry.toLowerCase()}-${top3Universities[currentUniversityIndex].toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}>
                                 <button className='px-4 py-[3px] text-eduTheme border border-eduTheme rounded-md mb-2'>
-                                    Explore {' >'}
+                                    Explore  <span> &gt; </span>
                                 </button>
                             </a>
                         </div>
@@ -110,7 +110,7 @@ function TopUniversityCourse() {
                                 href={`https://edulinks.io/${selectedCountry === "New Zealand" ? "nz" : selectedCountry.toLowerCase()}-${university.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}
                             >
                                 <button className="px-4 py-[2px] text-eduTheme border border-eduTheme rounded-md mb-2">
-                                    Explore {' >'}
+                                    Explore  <span> &gt; </span>
                                 </button>
                             </a>
                         </div>
@@ -138,9 +138,10 @@ function TopUniversityCourse() {
                             >
                                 {top3Courses[currentCourseIndex]}
                             </h1>
-                            <a href={`https://edulinks.io/${selectedCountry === "New Zealand" ? "nz" : selectedCountry.toLowerCase()}-${top3Courses[currentCourseIndex].toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}>
+                            <a href="https://cal.com/edulink-9gf5fp/30min">
                                 <button className='px-4 py-[3px] text-eduTheme border border-eduTheme rounded-md mb-2'>
-                                    Contact {' >'}
+                                    Contact
+                                    <span> &gt; </span>
                                 </button>
                             </a>
                         </div>
@@ -174,10 +175,11 @@ function TopUniversityCourse() {
                                 {course}
                             </h1>
                             <a
-                                href={`https://edulinks.io/${selectedCountry === "New Zealand" ? "nz" : selectedCountry.toLowerCase()}-${course.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}
+                                href="https://cal.com/edulink-9gf5fp/30min"
                             >
                                 <button className="px-4 py-[2px] text-eduTheme border border-eduTheme rounded-md mb-2">
-                                    Contact {' >'}
+                                    Contact
+                                    <span> &gt; </span>
                                 </button>
                             </a>
                         </div>
@@ -188,7 +190,7 @@ function TopUniversityCourse() {
             {/* Footer Section */}
             <div className='w-full flex justify-center items-end'>
                 <div className='flex justify-center items-center w-full'>
-                    <button onClick={() => navigate('/edulinks-ai-assistant/')} className='px-5 py-3 bg-white text-2xl font-medium text-eduTheme rounded-full mt-6'> Booking 1:1 Counseling </button>
+                    <button onClick={() => window.location.href = "https://cal.com/edulink-9gf5fp/30min"} className='px-5 py-3 bg-white text-2xl font-medium text-eduTheme rounded-full mt-6'> Booking 1:1 Counseling </button>
                 </div>
             </div>
         </div>

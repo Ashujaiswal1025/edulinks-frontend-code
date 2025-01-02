@@ -160,7 +160,7 @@ function Header() {
                                 </button>
                             </div>
                             <div className="book_btn">
-                                <button className="py-1.6 px-2 rounded-lg border-0.7 border-black  text-black text-sm font-bold hover:bg-eduTheme flex flex-wrap items-center justify-between">
+                                <button onClick={() => window.location.href = "https://cal.com/edulink-9gf5fp/30min"} className="py-1.6 px-2 rounded-lg border-0.7 border-black  text-black text-sm font-bold hover:bg-eduTheme flex flex-wrap items-center justify-between">
                                     <img src={vid} alt="rec" width={33} height={33} className='mr-[10px]' />
                                     Book online counselling
                                 </button>
