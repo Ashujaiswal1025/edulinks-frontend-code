@@ -128,13 +128,13 @@ function UniversityAssessment() {
               onClick={() => handleOptionClick(index)}
             >
               <div
-                className={`w-3 md:w-6 h-3 md:h-6 border rounded-full flex justify-center items-center mx-3 ${selectedOption === index
+                className={`w-4 md:w-6 h-4 md:h-6 border rounded-full flex justify-center items-center mx-3 ${selectedOption === index
                   ? 'border-eduThemeCircle'
                   : 'border-eduTheme'
                   }`}
               >
                 {selectedOption === index && (
-                  <div className="md:w-4 w-2 h-2 md:h-4 bg-eduThemeCircle rounded-full"></div>
+                  <div className="md:w-4 w-2.5 h-2.5 md:h-4 bg-eduThemeCircle rounded-full"></div>
                 )}
               </div>
               <h1 className="text-base">{option.options}</h1>

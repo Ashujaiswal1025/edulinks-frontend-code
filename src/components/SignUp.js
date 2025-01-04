@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 
 function SignUp() {
   const navigate = useNavigate();
@@ -17,6 +19,13 @@ function SignUp() {
     setFormData((prev) => ({
       ...prev,
       [name]: value,
+    }));
+  };
+
+  const handlePhoneChange = (value) => {
+    setFormData((prev) => ({
+      ...prev,
+      phoneNumber: value,
     }));
   };
 
@@ -56,16 +65,16 @@ function SignUp() {
 
   return (
     <div className='w-full h-full flex flex-col justify-center items-center'>
-      <div className="flex flex-col items-center justify-center pt-28">
+      <div className="flex flex-col items-center justify-center pt-28 px-5 pb-5">
         <ToastContainer />
-        <h1 className=" text-xl md:text-4xl font-adramalech font-bold text-white text-center mb-10">
+        <h1 className=" text-xl md:text-4xl font-adramalech sm:font-medium text-white text-center mb-10">
           Welcome to Edulinks AI Assistance to proceed further Sign up.
         </h1>
 
         {/* Form Container */}
         <div className='w-full flex justify-center items-center'>
           <div
-            className="rounded-[20px] shadow-md flex flex-col items-center md:w-[676px] md:h-[421px] max-w-[90%] bg-opacity-50 p-6 md:p-8"
+            className="rounded-[20px] shadow-md flex flex-col items-center xl:w-[676px] xl:h-[421px] max-w-[90%] bg-opacity-50 p-6 md:p-8"
             style={{
               backgroundColor: "rgba(255, 255, 255, 0.4)",
             }}
@@ -87,15 +96,32 @@ function SignUp() {
                 className="placeholder-black border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-eduTheme bg-white"
                 required
               />
-              <input
-                type="text"
-                name="phoneNumber"
-                placeholder="Phone Number"
+              <PhoneInput
+                country={'us'}
                 value={formData.phoneNumber}
-                onChange={handleChange}
-                className="placeholder-black border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-eduTheme bg-white"
-                required
-              />
+                onChange={handlePhoneChange}
+                className="placeholder-black rounded-md"
+                placeholder="Phone Number"
+                inputProps={{
+                  name: 'phoneNumber',
+                  pattern: ".*",
+                  required: true
+                }}
+                inputStyle={{
+                  border: 'none',          // Remove default border
+                  outline: 'none',         // Remove default outline
+                  padding: '1.4rem 3rem',  // Add custom padding if needed
+                  fontSize: '1.2rem',         // Adjust font size as per your design
+                  width: '100%'
+                }}
+                containerClass="relative w-full" // Keep the container position relative if you need to adjust positioning
+                buttonStyle={{
+                  border: 'none', // Remove border from the country dropdown button
+                  outline: 'none', // Remove outline from the button
+                }}
+                dropdownStyle={{
+                  border: 'none',  // Optionally remove the dropdown border
+                }} />
               <input
                 type="email"
                 name="email"

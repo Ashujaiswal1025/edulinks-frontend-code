@@ -52,7 +52,7 @@ function TopCourses() {
                         </h1>
                         <a href={`https://edulinks.io/${country.toLowerCase()}-${topCarrers[currentIndex].toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}>
                             <button className='px-4 py-[3px] text-eduTheme border border-eduTheme rounded-md mb-2'>
-                                Explore {' >'}
+                                Explore <span> &gt;</span>
                             </button>
                         </a>
                     </div>
@@ -88,9 +88,9 @@ function TopCourses() {
                             />
                         )}
                         <h1
-                            className='text-2xl h-28 flex justify-center items-center font-adramalech text-wrap my-2 text-center px-1'
+                            className='text-2xl h-28 flex justify-center items-center font-light font-adramalech text-wrap my-2 text-center px-1'
                             style={{
-                                background: 'linear-gradient(to bottom, #53C2C2 0%, #248182 100%)',
+                                background: 'linear-gradient(to right, #53C2C2 0%, #248182 100%)',
                                 WebkitBackgroundClip: 'text',
                                 color: 'transparent',
                             }}
@@ -99,7 +99,7 @@ function TopCourses() {
                         </h1>
                         <a href={`https://edulinks.io/${country.toLowerCase()}-${career.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}>
                             <button className='px-4 py-[2px] text-eduTheme border border-eduTheme rounded-md mb-2'>
-                                Explore {' >'}
+                                Explore <span> &gt;</span>
                             </button>
                         </a>
                     </div>
@@ -109,7 +109,13 @@ function TopCourses() {
             {/* Footer Section */}
             <div className='w-full h-1/2 bg-eduThemePhase flex justify-center items-end'>
                 <div className='flex justify-center items-center h-3/4 w-full'>
-                    <button onClick={() => navigate('/edulinks-ai-assistant/chat-with-me')} className='px-5 py-1 bg-eduTheme text-base font-medium text-white rounded mt-6'> Chat with me   {" >"}</button>
+                    <button onClick={() => navigate('/edulinks-ai-assistant/chat-with-me')} className='px-3 py-1 bg-eduTheme text-base font-medium text-white rounded mt-6'>
+                        <span className='flex'>
+                            Chat with me
+                            <svg width="16" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                        </span></button>
                 </div>
             </div>
         </div>

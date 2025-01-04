@@ -13,12 +13,12 @@ function Welcome() {
   return (
     <div className='h-full flex flex-col justify-center items-center '>
       <div className='w-full h-full flex flex-col justify-center items-center py-24'>
-        <div className='flex  justify-center xl:gap-24 items-center w-full tablet-range:mb-4 mb-6'>
+        <div className='flex flex-col md:flex-row justify-center xl:gap-24 items-center w-full tablet-range:mb-4 sm:mb-6'>
           <div className='md:ml-64'>
-            <h1 className='text-3xl lg:text-4xl font-adramalech text-center text-wrap font-normal'>Welcome to Edulinks AI Assistance</h1>
+            <h1 className='text-2xl sm:text-3xl lg:text-4xl font-adramalech text-center text-wrap font-normal'>Welcome to Edulinks AI Assistance</h1>
           </div>
           <span className=''>
-            <img src={icon} alt="link-logo" className='md:w-[237px] md:h-[108px] w-40 h-20 md:-ml-10 mt-10' />
+            <img src={icon} alt="link-logo" className='md:w-[237px] md:h-[108px] w-40 h-20 md:-ml-10 sm:mt-10' />
           </span>
         </div>
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import robo from '../Images/edulinks robo.png';
-import icon from '../Images/brain-icon.png';
+// import icon from '../Images/brain-icon.png';
 
 function VisaQuerry() {
 
@@ -10,14 +10,14 @@ function VisaQuerry() {
   return (
     <div className="relative w-full h-full">
     {/* Background Icon */}
-    <img
+    {/* <img
         src={icon}
         alt="Brain Icon"
         className="opacity-70 bg-blend-overlay absolute top-1/4 right-1/2 md:bottom-12 md:left-48 md:top-auto md:right-auto md:w-auto w-64 h-auto"
         style={{ zIndex: 0 }}
         width={525}
         height={725}
-    />
+    /> */}
 
     {/* Foreground Content */}
     <div className="relative z-10 w-full h-full flex flex-wrap flex-col md:flex-row justify-center items-center pt-20">
