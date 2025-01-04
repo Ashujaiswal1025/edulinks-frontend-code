@@ -11,8 +11,6 @@ function TopUniversityCourse() {
     const [currentUniversityIndex, setCurrentUniversityIndex] = useState(0);
     const [currentCourseIndex, setCurrentCourseIndex] = useState(0);
 
-    console.log(selectedCountry, top3Universities, top3Courses, filteredImages);
-
     const navigate = useNavigate();
 
     // University Carousel Handlers
@@ -63,7 +61,8 @@ function TopUniversityCourse() {
                             >
                                 {top3Universities[currentUniversityIndex]}
                             </h1>
-                            <a href={`https://edulinks.io/${selectedCountry === "New Zealand" ? "nz" : selectedCountry.toLowerCase()}-${top3Universities[currentUniversityIndex].toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}>
+                            <a href={`https://edulinks.io/${selectedCountry === "New Zealand" ? "nz" : selectedCountry.toLowerCase()}-${top3Universities[currentUniversityIndex].normalize("NFD")
+                                .replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}>
                                 <button className='px-4 py-[3px] text-eduTheme border border-eduTheme rounded-md mb-2'>
                                     Explore  <span> &gt; </span>
                                 </button>
@@ -107,7 +106,8 @@ function TopUniversityCourse() {
                                 {university}
                             </h1>
                             <a
-                                href={`https://edulinks.io/${selectedCountry === "New Zealand" ? "nz" : selectedCountry.toLowerCase()}-${university.toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}
+                                href={`https://edulinks.io/${selectedCountry === "New Zealand" ? "nz" : selectedCountry.toLowerCase()}-${university.normalize("NFD")
+                                    .replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/\s+/g, '-').replace(/&/g, '')}/`}
                             >
                                 <button className="px-4 py-[2px] text-eduTheme border border-eduTheme rounded-md mb-2">
                                     Explore  <span> &gt; </span>

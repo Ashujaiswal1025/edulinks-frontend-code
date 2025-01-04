@@ -146,7 +146,7 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: 'Ruprecht-Karls-Universität Heidelberg ',
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg',
             points: 5
           },
           {
@@ -224,7 +224,7 @@ export const germanyUniversitiesCoursesDetails = [
         options: 'Research and Academia',
         universitiesOption: [
           {
-            optionDetails: 'Ruprecht-Karls-Universität Heidelberg ',
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg',
             points: 5
           },
           {
@@ -300,7 +300,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg",
             points: 3
           }
         ]
@@ -378,7 +378,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
+            optionDetails: "Ruprecht-Karls-Universität Heidelberg",
             points: 3
           }
         ]
@@ -408,7 +408,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 5
           },
           {
-            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg',
             points: 4
           },
           {
@@ -475,7 +475,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 5
           },
           {
-            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg',
             points: 4
           },
           {
@@ -662,7 +662,7 @@ export const germanyUniversitiesCoursesDetails = [
         ],
         universitiesOption: [
           {
-            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg',
             points: 5
           },
           {
@@ -923,7 +923,7 @@ export const germanyUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg',
             points: 3
           }
         ]
@@ -1174,7 +1174,7 @@ export const germanyUniversitiesCoursesDetails = [
         options: "Academic experts for research opportunities",
         universitiesOption: [
           {
-            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg',
             points: 5
           },
           {
@@ -1870,7 +1870,7 @@ export const canadaUniversitiesCoursesDetails = [
             points: 4
           },
           {
-            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg',
             points: 3
           }
         ]
@@ -1900,7 +1900,7 @@ export const canadaUniversitiesCoursesDetails = [
             points: 5
           },
           {
-            optionDetails: "Ruprecht-Karls-Universität Heidelberg ",
+            optionDetails: 'Ruprecht-Karls-Universität Heidelberg',
             points: 4
           },
           {
