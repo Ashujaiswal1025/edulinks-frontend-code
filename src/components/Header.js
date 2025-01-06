@@ -214,7 +214,7 @@ function Header() {
 
                 {!showLogout && hideLinks &&(
                     <div
-                        className="flex justify-center items-center text-base rounded-md cursor-pointer font-bold font-robotoCondensed"
+                        className="flex justify-center items-center text-base rounded-md cursor-pointer font-bold font-robotoCondensed mr-5 md:mr-0"
                         onClick={handleLogout}
                     >
                         <div className="flex items-center justify-center h-7 w-7">

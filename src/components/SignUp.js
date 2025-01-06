@@ -68,7 +68,7 @@ function SignUp() {
       <div className="flex flex-col items-center justify-center pt-28 px-5 pb-5">
         <ToastContainer />
         <h1 className=" text-xl md:text-4xl font-adramalech sm:font-medium text-white text-center mb-10">
-          Welcome to Edulinks AI Assistance to proceed further Sign up.
+          Welcome to Edulinks AI Assistance
         </h1>
 
         {/* Form Container */}

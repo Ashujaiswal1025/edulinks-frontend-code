@@ -132,6 +132,7 @@ function UniversityAssessment() {
                   ? 'border-eduThemeCircle'
                   : 'border-eduTheme'
                   }`}
+                  style={{ minHeight: '18px', minWidth: '18px' }}
               >
                 {selectedOption === index && (
                   <div className="md:w-4 w-2.5 h-2.5 md:h-4 bg-eduThemeCircle rounded-full"></div>

@@ -250,7 +250,7 @@ function ChatWithMe() {
                     )}
                   </div>
                   {message.role === "user" && (
-                    <div className="w-[60px] ml-3 h-[60px] rounded-full bg-eduTheme text-white font-black text-2xl flex justify-center items-center">
+                    <div className="w-14 ml-3 h-14 rounded-full bg-eduTheme text-white font-bold text-2xl flex justify-center items-center">
                       {capitalizeFirstName(userData)[0]}
                     </div>
                   )}
